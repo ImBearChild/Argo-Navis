@@ -12,6 +12,13 @@ function saveSearchSettings() {
 
 function saveSyncSettings() {}
 
+function saveDebugSettings() {
+	parent.configData=JSON.parse($("#config_code").val());
+	parent.naviData=JSON.parse($("#navi_code").val());
+	parent.saveConfigData();
+	parent.saveNaviData();
+}
+
 function saveIconBox() {
 	let a = editObjNum[0] ;
 	let b = editObjNum[1] ;
@@ -148,7 +155,10 @@ $(document).on("pagebeforeshow", "#extensions", function () {
 	loadExtensions();
 });
 
-$(document).on("pagebeforeshow", "#sync_settings", function () {});
+$(document).on("pagebeforeshow", "#debug_settings", function () {
+	$("#config_code").val(JSON.stringify(parent.configData, null, 2));
+	$("#navi_code").val(JSON.stringify(parent.naviData, null, 2));
+});
 
 $(document).on("pagebeforeshow", "#box_adder", function () {
 	$("#position_row").attr("max",parent.naviData.length);

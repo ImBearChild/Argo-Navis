@@ -89,7 +89,7 @@
                 </li>
 
                 <li>
-                    <a href="#debug_settings">Debug(In developing...)</a>
+                    <a href="#debug_settings">Debug</a>
                 </li>
 
                 <li>
@@ -357,17 +357,19 @@
     <div data-role="page" id="debug_settings">
         <div data-role="header">
             <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
                 <a href="#" data-role="button" data-iconpos="notext" data-icon="check" onclick="saveDebugSettings()">Save</a>
-                <a href="#" data-role="button" data-iconpos="notext" data-icon="refresh">Reset</a>
-            </div>
-
             <h1>-</h1>
         </div>
 
         <div data-role="content">
-            hello
+           <div data-role="fieldcontain">
+                <label for="config_code">Configure Code：</label> 
+                <textarea name="config_code" id="config_code" value="" placeholder="Some configure">
+</textarea>
+<label for="navi_code">Navi Code：</label> 
+                <textarea name="navi_code" id="navi_code" value="" placeholder="Some configure">
+</textarea>
+            </div>
         </div>
     </div>
 </body>
