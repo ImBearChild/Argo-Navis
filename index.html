@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content="Bluefish 2.2.10" >
+  <meta charset="utf-8">
+  <meta name="viewport" content=
+  "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Copas</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="./styles/index.css" rel="stylesheet" type="text/css">
+  <script src="./scripts/jquery-1.11.1.min.js"></script>
+  <script src="./scripts/localforage.min.js"></script>
+  <script src="./scripts/trianglify.min.js"></script>
+  <script src="./scripts/user-data.js"></script>
+  <script src="./scripts/index.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- <div class="links"><a href="jide-homepage://bbs" id="bbslink">{{REMIX_BBS_TITLE}}</a></div> -->
+    <div id="search_form">
+      <div id="search_wrapper">
+        <form id="form" method="get" action="./index.html" onsubmit=
+        "return checkSubmit()" name="form">
+          <div class="input_wrapper">
+            <input name="word" type="text" class="search_input" id=
+            "word" placeholder="Search" autocomplete="off">
+          </div><a href="#" class="search_btn" onclick=
+          "return checkSubmit()"></a>
+        </form><a href="#" class="apps_btn" onclick=
+        "return toggleApps()"></a>
+      </div>
+    </div>
+    <div id="apps_div">
+      <iframe src="./navi.html#navi" width="100%" frameborder="0" name=
+      "app_iframe" seamless="" id="app_iframe"></iframe>
+    </div>
+    <div id="lr_toggler_wrapper">
+      <button id="lr_toggler" onclick="return toggleLrDiv()"></button>
+    </div>
+    <div id="lr_div">
+      <div class="button_wrapper">
+        <a href="./navi.html#navi" id="reload_button" class="lr_button"
+        target="app_iframe" onclick="lr_button_onclick()"></a>
+      </div>
+      <div class="button_wrapper">
+        <a href="./misc.html#settings" id="settings_button" class=
+        "lr_button" target="app_iframe" onclick="lr_button_onclick()"></a>
+      </div>
+      <div class="button_wrapper">
+        <a href="./misc.html#navi_editor" id="edit_button" class=
+        "lr_button" target="app_iframe" onclick="lr_button_onclick()"></a>
+      </div>
+      <div class="button_wrapper">
+        <a href="./misc.html#extensions" id="extensions_button" class=
+        "lr_button" target="app_iframe" onclick="lr_button_onclick()"></a>
+      </div>
+      <div class="button_wrapper">
+        <a href="./navi.html" id="transfer_button" class="lr_button"
+        target="app_iframe" onclick=""></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
