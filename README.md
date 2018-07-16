@@ -24,3 +24,4 @@
 3. 访问 localhost:8088/index.html
    
 ## 截图
+![](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/Copas-Start.png)
