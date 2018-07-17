@@ -30,6 +30,9 @@
 参见:https://github.com/ImBearChild/Copas-Start/wiki
 
 ## 截图
+使用图片背景
 ![使用图片背景](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/PresetPic.png)
+使用动态生成的背景
 ![使用动态生成的背景](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/Copas-Start.png)
+比较
 ![比较](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/Compare.png)
