@@ -2,6 +2,18 @@
 var editObjNum = [0,0];
 var operationTBC; // operation to be confirmed
 var infoTBS;
+var iconBoxPre={
+			"type": "iconbox",
+			"name": "...",
+			"href": "http://example.com",
+			"target": "_blank",
+			"icon": "./images/icons/Hosts.png"
+		};
+var htmlBoxPre={
+			"type": "html",
+			"name": "Test",
+			"html": "PHA+5L2g5aW977yM5LiW55WMPC9wPg=="
+		};
 
 function saveSearchSettings() {
 	parent.configData.searchURL = $("#search_url").val();
@@ -62,7 +74,8 @@ function rmBox(){
 
 
 function addHtmlBox(){
-	
+	let r=$("#position_row").val();
+	// parent.naviData.splice(r,0, 
 }
 
 function confirmOperation(operation,info){
@@ -100,6 +113,10 @@ function loadNaviSetting() {
 		let divider = $("<li data-role='list-divider'></li").text("Row " + (i + 1));
 		console.log(divider.text());
 		$("#navi_contain").append(divider);
+		if (parent.naviData[i].length == 0) {
+				let li =$("<li></li>").text("Empty");
+				$("#navi_contain").append(li);
+		} else {
 		for (var ii = 0; ii < parent.naviData[i].length; ii++) {
 			if (parent.naviData[i][ii].type == "html") {
 				let item = $("<a href='#htmlbox_editor' ></a>").text("HTML Box : "+ parent.naviData[i][ii].name);
@@ -112,14 +129,65 @@ function loadNaviSetting() {
 				let li =$("<li></li>").html(item);
 				$("#navi_contain").append(li);
 			}
-		}
+		}}
 	}
 	$("#navi_contain").listview("refresh");
+}
+
+function loadNaviAdder() {
+	$("#naviadd_contain").empty();
+	console.info("Loading NaviAdder....");
+	for (var i = 0; i < parent.naviData.length; i++) {
+		let divider = $("<li data-role='list-divider'></li").text("Row " + (i + 1));
+		console.log(divider.text());
+		$("#naviadd_contain").append(divider);
+		if (parent.naviData[i].length == 0) {
+			let item = $("<a href='#box_adder'></a>").text("Add a box here");
+			item.attr("onclick","passEditObj("+ i+",0)");
+			let li =$("<li data-icon='plus'></li>").html(item);
+			$("#naviadd_contain").append(li);
+		} else {
+		for (var ii = 0; ii < parent.naviData[i].length; ii++) {
+			if (parent.naviData[i][ii].type == "html") {
+				let li =$("<li></li>").text("HTML Box : "+ parent.naviData[i][ii].name);
+				$("#naviadd_contain").append(li);
+			} else if (parent.naviData[i][ii].type == "iconbox") {
+				let li =$("<li></li>").text("Icon Box : "+ parent.naviData[i][ii].name);
+				$("#naviadd_contain").append(li);
+			}
+			let item = $("<a href='#box_adder'></a>").text("Add a box here");
+			item.attr("onclick","passEditObj("+ i+"," +ii +")");
+			let li =$("<li data-icon='plus'></li>").html(item);
+			$("#naviadd_contain").append(li);
+		}
+		let item = $("<a href='#'></a>").text("Add a row here");
+		item.attr("onclick","addRow("+ i+")");
+		let li =$("<li data-icon='plus'></li>").html(item);
+		$("#naviadd_contain").append(li);
+		}
+	}
+	$("#naviadd_contain").listview("refresh");
+}
+
+function addIconBox(){
+	let a = editObjNum[0] ;
+	let b = editObjNum[1] ;
+	parent.naviData[a].splice(b+1,0,iconBoxPre);
+	editObjNum=[a,b];
+	
+	parent.$("#app_iframe").attr("src","./misc.html#iconbox_editor");
 }
 
 function passEditObj(a,b) {
 	editObjNum =[a,b];
 	console.log("editObjNum" +editObjNum);
+}
+
+function addRow(row) {
+	console.log("Add row:" + row);
+	parent.naviData.splice(row+1,0,[]);
+	parent.saveNaviData();
+	loadNaviAdder();
 }
 
 function background_engine_onchange() {
@@ -135,6 +203,7 @@ function background_engine_onchange() {
 		$("#background_description").text("Custom picture : Use URL in the input box under this");
 	}
 }
+
 function search_engine_onchange() {
 	console.log("search_engine set");
 	if ($("#search_engine").val() == "baidu") {
@@ -160,8 +229,8 @@ $(document).on("pagebeforeshow", "#debug_settings", function () {
 	$("#navi_code").val(JSON.stringify(parent.naviData, null, 2));
 });
 
-$(document).on("pagebeforeshow", "#box_adder", function () {
-	$("#position_row").attr("max",parent.naviData.length);
+$(document).on("pagebeforeshow", "#navi_adder", function () {
+	loadNaviAdder();
 });
 
 $(document).on("pagebeforeshow", "#confirm_page", function () {
@@ -177,6 +246,8 @@ $(document).on("pagebeforeshow", "#htmlbox_editor", function () {
 });
 
 $(document).on("pagebeforeshow", "#iconbox_editor", function () {
+	console.info("Loading iconbox_editor");
+	console.log("editObjNum:"+editObjNum);
 	let a = editObjNum[0] ;
 	let b = editObjNum[1] ;
 	$("#iconbox_name").val(parent.naviData[a][b].name);

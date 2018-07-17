@@ -3,6 +3,9 @@
 <html>
 <head>
     <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+    <meta name="generator" content="Bluefish 2.2.10">
+    <meta name="generator" content="Bluefish 2.2.10">
+    <meta name="generator" content="Bluefish 2.2.10">
 
     <title></title>
     <meta charset="utf-8">
@@ -203,7 +206,7 @@
 
             <div data-role="fieldcontain">
                 <label for="background_config">Background configure：</label> 
-                <textarea name="background_config" id="background_config" value="" placeholder="Some configure">
+                <textarea name="background_config" id="background_config" placeholder="Some configure">
 </textarea>
             </div>
         </div>
@@ -211,8 +214,9 @@
 
     <div data-role="page" id="navi_editor">
         <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
- <!-- <a href= "#box_adder" data-role="button" class="ui-btn-right"   data-iconpos="notext" data-icon="plus">Add</a> -->
+            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a> <a href="#navi_adder"
+            data-role="button" class="ui-btn-right" data-iconpos="notext" data-icon="plus">Add</a>
+
             <h1><!-- . --></h1>
         </div>
 
@@ -223,44 +227,43 @@
         </div>
     </div>
 
-    <div data-role="page" id="box_adder">
+    <div data-role="page" id="navi_adder">
         <div data-role="header">
             <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
 
             <h1><!-- . --></h1>
         </div>
-<div data-role="content">
-        <ul data-role="listview" id="addBox_list">
-            <li data-role="list-divider">Step1:Position</li>
-            <li>
-                
-                        <label for="position_row">Row：</label> <input type="number" min="0" name="position_row" id="position_row" value=
-                        "" placeholder="Which row this box will be in"> <label for="position_col">Column:</label> <input type=
-                        "number" name="position_col" id="position_col" value="" min="0" placeholder="Which column this box will be in">
-              <p>Example: </br>If you input "1" in "Row" : [Row1](Inserted new row)[Row2]</p>
-				<p>Note:Zero means add one before.</p>
-            </li>
-<li data-role="list-divider">Step2:Choose a type</li>
-            <li data-role="list-divider">(Custom)</li>
 
-            <li>
-                <a href="#iconbox_editor" onclick="addIconBox()">Icon Box</a>
-            </li>
-            <li>
-                <a href="#htmlbox_editor" onclick="addHtmlBox()">HTML Box</a>
-            </li>
-
-            <li data-role="list-divider">(Extension preset)</li>
-			<li>Still in developing.....<l/i>
-        </ul>
-		</div>
+        <div data-role="content">
+            <ul data-role="listview" id="naviadd_contain">
+                <!-- Hello -->
+            </ul>
+        </div>
     </div>
-	<div data-role="header">
+	
+	    <div data-role="page" id="box_adder">
+        <div data-role="header">
             <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
 
             <h1><!-- . --></h1>
         </div>
-	</div>
+
+        <div data-role="content">
+            <ul data-role="listview" id="boxadd_contain">
+                 <li data-role="list-divider">Custom</li>
+				  <li><a onclick="addIconBox()">Icon Box</a></li>
+				 <li><a onclick="addHtmlNox()">HTML Box</a></li>
+				 <li data-role="list-divider">Preset</li>
+				 <li>Under construction....</li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-role="header">
+        <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
+
+        <h1><!-- . --></h1>
+    </div>
 
     <div data-role="page" id="htmlbox_editor">
         <div data-role="header">
@@ -283,7 +286,7 @@
 
             <div data-role="fieldcontain">
                 <label for="htmlbox_code">HTML Code：</label> 
-                <textarea name="htmlbox_code" id="htmlbox_code" value="" placeholder="Some configure">
+                <textarea name="htmlbox_code" id="htmlbox_code" placeholder="Some configure">
 </textarea>
             </div>
 
@@ -352,18 +355,18 @@
 
     <div data-role="page" id="debug_settings">
         <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-                <a href="#" data-role="button" data-iconpos="notext" data-icon="check" onclick="saveDebugSettings()">Save</a>
+            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a> <a href="#" data-role=
+            "button" data-iconpos="notext" data-icon="check" onclick="saveDebugSettings()">Save</a>
+
             <h1>-</h1>
         </div>
 
         <div data-role="content">
-           <div data-role="fieldcontain">
+            <div data-role="fieldcontain">
                 <label for="config_code">Configure Code：</label> 
-                <textarea name="config_code" id="config_code" value="" placeholder="Some configure">
-</textarea>
-<label for="navi_code">Navi Code：</label> 
-                <textarea name="navi_code" id="navi_code" value="" placeholder="Some configure">
+                <textarea name="config_code" id="config_code" placeholder="Some configure">
+</textarea> <label for="navi_code">Navi Code：</label> 
+                <textarea name="navi_code" id="navi_code" placeholder="Some configure">
 </textarea>
             </div>
         </div>
