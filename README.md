@@ -26,5 +26,10 @@
 
 3. 访问 localhost:8088/index.html
    
-## 截图与文档
+ ## 文档
 参见:https://github.com/ImBearChild/Copas-Start/wiki
+
+## 截图
+![使用图片背景](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/PresetPic.png)
+![使用动态生成的背景](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/Copas-Start.png)
+![比较](https://raw.githubusercontent.com/ImBearChild/Assets/master/Copas-Start/Compare.png)
