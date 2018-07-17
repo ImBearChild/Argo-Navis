@@ -79,7 +79,7 @@ function lr_button_onclick() {
 $(window).resize(function () {
 	console.warn("Windows resized. Layout may be changed");
 	if (appShowed == 1) {
-		if (window.innerHeight < 600) {
+		if (window.innerWidth < 600) {
 			$("div#search_form").css({
 				top: '5%'
 			});
