@@ -8,25 +8,24 @@
     40% {opacity: 0;}  
     100% {opacity: 1;}  
     }  
+	
 body {    
     animation: fade-in;/*动画名称*/  
     animation-duration: 1.5s;/*动画持续时间*/  
     -webkit-animation:fade-in 1.5s;/*针对webkit内核*/  
     }  
-
-
 div.box {
-	margin: 4px;
-	position:relative;
+	margin-left: 4px;
+	margin-right:4px;
 	display: inline-block;
 }
-
 div.row {
-	left: -50%;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
-	width: -moz-fit-content; width:-webkit-fit-content; width: fit-content; margin-left: auto; margin-right: auto;
+	width: -moz-fit-content; 
+	width:-webkit-fit-content; 
+	width: fit-content; 
 }
 
 img.icon {
@@ -35,17 +34,17 @@ img.icon {
 }
 
 p.name {
-	margin-top:2px;
-	margin-bottom:4px;
+	margin-top:0px;
+	margin-bottom:0px;
 	text-align:center;
 }
 
 div#bookmarks {
+	margin-left:auto;
+	margin-right:auto;
 	vertical-align: middle;
 	display: table;
-	width: -moz-fit-content; width:-webkit-fit-content; width: fit-content; margin-left: auto; margin-right: auto;
-}
-
-.hide {
-	visibility: hidden;
+   width: -moz-fit-content;
+   width:-webkit-fit-content; 
+   width: fit-content; 
 }

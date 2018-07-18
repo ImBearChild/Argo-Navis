@@ -1,7 +1,4 @@
 'use strict'
-// JavaScript Document
-
-
 var appShowed = 0; // 2=first 1=showed 0=hide
 var LrDivToggled = 0;
 
@@ -111,9 +108,5 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
-	//$("div#serverInfo").hide();
 	console.info("Inner hight of Window: " + window.innerHeight);
-	//$("div#apps_div").css("margin-top", window.innerHeight * -1.5)
-	//updateBackground();
-	//$("div.button_wrapper").hide();
 });

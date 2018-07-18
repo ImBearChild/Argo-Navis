@@ -1,5 +1,4 @@
 'use strict'
-
 function loadNavi() {
 	console.info("Loading Page....");
 	for (var i = 0; i < parent.naviData.length; i++) {
@@ -31,24 +30,10 @@ function loadNavi() {
 		$("#bookmarks").append(row);
 	}
 }
-
 $(document).ready(function () {
 	try {
 		loadNavi();
 	} catch (err) {
 		console.error("[Error]  " + err);
 	}
-	/* 	$.ajax({
-	url: "./data/bookmarks.json",
-	data: null,
-	success: function (result) {
-	parent.naviData = result;
-	console.log(parent.naviData);
-	loadBookMarks();
-	},
-	error: function (jqXHR, textStatus, errorThrown) {
-	console.log(textStatus + ": " + jqXHR.status + " - " + errorThrown);
-	},
-	dataType: "json"
-	}); */
 });

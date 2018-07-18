@@ -1,19 +1,19 @@
 'use strict'
-var editObjNum = [0,0];
+var editObjNum = [0, 0];
 var operationTBC; // operation to be confirmed
 var infoTBS;
-var iconBoxPre={
-			"type": "iconbox",
-			"name": "...",
-			"href": "http://example.com",
-			"target": "_blank",
-			"icon": "./images/icons/Hosts.png"
-		};
-var htmlBoxPre={
-			"type": "html",
-			"name": "Test",
-			"html": "PHA+5L2g5aW977yM5LiW55WMPC9wPg=="
-		};
+var iconBoxPre = {
+	"type": "iconbox",
+	"name": "...",
+	"href": "http://example.com",
+	"target": "_blank",
+	"icon": "./images/icons/Hosts.png"
+};
+var htmlBoxPre = {
+	"type": "html",
+	"name": "Example",
+	"html": "PHA+5L2g5aW977yM5LiW55WMPC9wPg=="
+};
 
 function saveSearchSettings() {
 	parent.configData.searchURL = $("#search_url").val();
@@ -25,31 +25,30 @@ function saveSearchSettings() {
 function saveSyncSettings() {}
 
 function saveDebugSettings() {
-	parent.configData=JSON.parse($("#config_code").val());
-	parent.naviData=JSON.parse($("#navi_code").val());
+	parent.configData = JSON.parse($("#config_code").val());
+	parent.naviData = JSON.parse($("#navi_code").val());
 	parent.saveConfigData();
 	parent.saveNaviData();
 }
 
 function saveIconBox() {
-	let a = editObjNum[0] ;
-	let b = editObjNum[1] ;
-	parent.naviData[a][b].name=$("#iconbox_name").val();
-	parent.naviData[a][b].href=$("#iconbox_href").val();
-	parent.naviData[a][b].target=$("#iconbox_target").val();
-	parent.naviData[a][b].icon=$("#iconbox_icourl").val();
+	let a = editObjNum[0];
+	let b = editObjNum[1];
+	parent.naviData[a][b].name = $("#iconbox_name").val();
+	parent.naviData[a][b].href = $("#iconbox_href").val();
+	parent.naviData[a][b].target = $("#iconbox_target").val();
+	parent.naviData[a][b].icon = $("#iconbox_icourl").val();
 	parent.saveNaviData();
 }
 
-function saveHtmlBox(){
-	let a = editObjNum[0] ;
-	let b = editObjNum[1] ;
+function saveHtmlBox() {
+	let a = editObjNum[0];
+	let b = editObjNum[1];
 	parent.naviData[a][b].name = $("#htmlbox_name").val();
-	parent.naviData[a][b].html=base64.encode($("#htmlbox_code").val());
+	parent.naviData[a][b].html = base64.encode($("#htmlbox_code").val());
 	console.log(base64.decode(parent.naviData[a][b].html));
 	parent.saveNaviData();
 }
-
 
 function saveAppearanceSettings() {
 	parent.configData.backgroundEngine = $("#background_engine").val();
@@ -60,28 +59,22 @@ function saveAppearanceSettings() {
 	parent.saveConfigData();
 }
 
-function rmBox(){
-	let a = editObjNum[0] ;
-	let b = editObjNum[1] ;
-	parent.naviData[a].splice(b,1);
+function rmBox() {
+	let a = editObjNum[0];
+	let b = editObjNum[1];
+	parent.naviData[a].splice(b, 1);
 	console.log(parent.naviData[a].length);
-	if (parent.naviData[a].length==0) {
-		parent.naviData.splice(a,1);
+	if (parent.naviData[a].length == 0) {
+		parent.naviData.splice(a, 1);
 	}
 	parent.saveNaviData();
-	parent.$("#app_iframe").attr('src','./misc.html#navi_editor');
+	parent.$("#app_iframe").attr('src', './misc.html#navi_editor');
 }
 
-
-function addHtmlBox(){
-	let r=$("#position_row").val();
-	// parent.naviData.splice(r,0, 
-}
-
-function confirmOperation(operation,info){
+function confirmOperation(operation, info) {
 	operationTBC = operation;
-	infoTBS =info;
-	parent.$("#app_iframe").attr('src','./misc.html#confirm_page');
+	infoTBS = info;
+	parent.$("#app_iframe").attr('src', './misc.html#confirm_page');
 }
 
 function resetAppearanceSettings() {
@@ -114,22 +107,23 @@ function loadNaviSetting() {
 		console.log(divider.text());
 		$("#navi_contain").append(divider);
 		if (parent.naviData[i].length == 0) {
-				let li =$("<li></li>").text("Empty");
-				$("#navi_contain").append(li);
+			let li = $("<li></li>").text("Empty");
+			$("#navi_contain").append(li);
 		} else {
-		for (var ii = 0; ii < parent.naviData[i].length; ii++) {
-			if (parent.naviData[i][ii].type == "html") {
-				let item = $("<a href='#htmlbox_editor' ></a>").text("HTML Box : "+ parent.naviData[i][ii].name);
-				item.attr("onclick","passEditObj("+ i+"," +ii +")");
-				let li =$("<li></li>").html(item);
-				$("#navi_contain").append(li);
-			} else if (parent.naviData[i][ii].type == "iconbox") {
-				let item = $("<a href='#iconbox_editor'></a>").text("Icon Box : "+ parent.naviData[i][ii].name);
-				item.attr("onclick","passEditObj("+ i+"," +ii +")");
-				let li =$("<li></li>").html(item);
-				$("#navi_contain").append(li);
+			for (var ii = 0; ii < parent.naviData[i].length; ii++) {
+				if (parent.naviData[i][ii].type == "html") {
+					let item = $("<a href='#htmlbox_editor' ></a>").text("HTML Box : " + parent.naviData[i][ii].name);
+					item.attr("onclick", "passEditObj(" + i + "," + ii + ")");
+					let li = $("<li></li>").html(item);
+					$("#navi_contain").append(li);
+				} else if (parent.naviData[i][ii].type == "iconbox") {
+					let item = $("<a href='#iconbox_editor'></a>").text("Icon Box : " + parent.naviData[i][ii].name);
+					item.attr("onclick", "passEditObj(" + i + "," + ii + ")");
+					let li = $("<li></li>").html(item);
+					$("#navi_contain").append(li);
+				}
 			}
-		}}
+		}
 	}
 	$("#navi_contain").listview("refresh");
 }
@@ -141,51 +135,57 @@ function loadNaviAdder() {
 		let divider = $("<li data-role='list-divider'></li").text("Row " + (i + 1));
 		console.log(divider.text());
 		$("#naviadd_contain").append(divider);
-		if (parent.naviData[i].length == 0) {
-			let item = $("<a href='#box_adder'></a>").text("Add a box here");
-			item.attr("onclick","passEditObj("+ i+",0)");
-			let li =$("<li data-icon='plus'></li>").html(item);
-			$("#naviadd_contain").append(li);
-		} else {
+		let item = $("<a href='#box_adder'></a>").text("Add a box here");
+		item.attr("onclick", "passEditObj(" + i + ",-1)");
+		let li = $("<li data-icon='plus'></li>").html(item);
+		$("#naviadd_contain").append(li);
 		for (var ii = 0; ii < parent.naviData[i].length; ii++) {
 			if (parent.naviData[i][ii].type == "html") {
-				let li =$("<li></li>").text("HTML Box : "+ parent.naviData[i][ii].name);
+				let li = $("<li></li>").text("HTML Box : " + parent.naviData[i][ii].name);
 				$("#naviadd_contain").append(li);
 			} else if (parent.naviData[i][ii].type == "iconbox") {
-				let li =$("<li></li>").text("Icon Box : "+ parent.naviData[i][ii].name);
+				let li = $("<li></li>").text("Icon Box : " + parent.naviData[i][ii].name);
 				$("#naviadd_contain").append(li);
 			}
 			let item = $("<a href='#box_adder'></a>").text("Add a box here");
-			item.attr("onclick","passEditObj("+ i+"," +ii +")");
-			let li =$("<li data-icon='plus'></li>").html(item);
+			item.attr("onclick", "passEditObj(" + i + "," + ii + ")");
+			let li = $("<li data-icon='plus'></li>").html(item);
 			$("#naviadd_contain").append(li);
 		}
-		let item = $("<a href='#'></a>").text("Add a row here");
-		item.attr("onclick","addRow("+ i+")");
-		let li =$("<li data-icon='plus'></li>").html(item);
-		$("#naviadd_contain").append(li);
-		}
+			item = $("<a href='#'></a>").text("Add a row here");
+			item.attr("onclick", "addRow(" + i + ")");
+			li = $("<li data-icon='plus'></li>").html(item);
+			$("#naviadd_contain").append(li);
 	}
 	$("#naviadd_contain").listview("refresh");
 }
 
-function addIconBox(){
-	let a = editObjNum[0] ;
-	let b = editObjNum[1] ;
-	parent.naviData[a].splice(b+1,0,iconBoxPre);
-	editObjNum=[a,b];
-	
-	parent.$("#app_iframe").attr("src","./misc.html#iconbox_editor");
+function addIconBox() {
+	let a = editObjNum[0];
+	let b = editObjNum[1];
+	let c = $.extend(true,{} , iconBoxPre);
+	parent.naviData[a].splice(b+1, 0,c);
+	editObjNum = [a, b+1];
+	parent.$("#app_iframe").attr("src", "./misc.html#iconbox_editor");
 }
 
-function passEditObj(a,b) {
-	editObjNum =[a,b];
-	console.log("editObjNum" +editObjNum);
+function addHtmlBox() {
+	let a = editObjNum[0];
+	let b = editObjNum[1];
+	let c = $.extend(true,{} , htmlBoxPre);
+	parent.naviData[a].splice(b+1, 0,c);
+	editObjNum = [a, b+1];
+	parent.$("#app_iframe").attr("src", "./misc.html#htmlbox_editor");
+}
+
+function passEditObj(a, b) {
+	editObjNum = [a, b];
+	console.log("editObjNum  :" + editObjNum);
 }
 
 function addRow(row) {
 	console.log("Add row:" + row);
-	parent.naviData.splice(row+1,0,[]);
+	parent.naviData.splice(row + 1, 0, []);
 	parent.saveNaviData();
 	loadNaviAdder();
 }
@@ -238,8 +238,8 @@ $(document).on("pagebeforeshow", "#confirm_page", function () {
 });
 
 $(document).on("pagebeforeshow", "#htmlbox_editor", function () {
-	let a = editObjNum[0] ;
-	let b = editObjNum[1] ;
+	let a = editObjNum[0];
+	let b = editObjNum[1];
 	$("#htmlbox_name").val(parent.naviData[a][b].name);
 	console.log(base64.decode(parent.naviData[a][b].html));
 	$("#htmlbox_code").val(base64.decode(parent.naviData[a][b].html));
@@ -247,9 +247,9 @@ $(document).on("pagebeforeshow", "#htmlbox_editor", function () {
 
 $(document).on("pagebeforeshow", "#iconbox_editor", function () {
 	console.info("Loading iconbox_editor");
-	console.log("editObjNum:"+editObjNum);
-	let a = editObjNum[0] ;
-	let b = editObjNum[1] ;
+	console.log("editObjNum:" + editObjNum);
+	let a = editObjNum[0];
+	let b = editObjNum[1];
 	$("#iconbox_name").val(parent.naviData[a][b].name);
 	$("#iconbox_href").val(parent.naviData[a][b].href);
 	$("#iconbox_target").val(parent.naviData[a][b].target);
