@@ -1,375 +1,349 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
-    <meta name="generator" content="Bluefish 2.2.10">
-    <meta name="generator" content="Bluefish 2.2.10">
-    <meta name="generator" content="Bluefish 2.2.10">
-
-    <title></title>
-    <meta charset="utf-8">
-    <link href="./styles/jquery.mobile-1.4.5.min.css" rel="stylesheet">
-    <script src="./scripts/jquery-1.11.1.min.js">
-</script>
-    <script src="./scripts/jquery.mobile-1.4.5.min.js">
-</script>
-    <script src="./scripts/base64.min.js">
-</script>
-    <script src="./scripts/misc.js">
-</script>
+  <title></title>
+  <meta charset="utf-8">
+  <link href="./styles/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+  <script src="./scripts/jquery-1.11.1.min.js">
+  </script>
+  <script src="./scripts/jquery.mobile-1.4.5.min.js">
+  </script>
+  <script src="./scripts/base64.min.js">
+  </script>
+  <script src="./scripts/misc.js">
+  </script>
 </head>
-
 <body>
-    <div data-role="page" id="extensions">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <h1>Extensions</h1><a href="navi.html" data-role="button" class="ui-btn-right" data-icon="home" data-iconpos=
-            "notext"></a>
-        </div>
-
-        <div data-role="content">
-            <ul id="ex_list" data-role='listview'></ul>
-            <!-- <a id="template_a" class="hide" href="pi_watcher.ex.html" data-role="button" data-icon="info" data-iconpos="left">Settings</a> -->
-        </div>
-    </div>
-
-    <div data-role="page" id="about">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <h1>About</h1><a href="navi.html" data-role="button" class="ui-btn-right" data-icon="home" data-iconpos="notext"></a>
-        </div>
-
-        <div data-role="content">
-            <div class="box">
-                <p><img class="icon" src="./favicon.png" alt=""></p>
-            </div>
-
-            <h3>Copas</h3>
-
-            <p>Your personal startpage.</p>
-
-            <h3>Thanks</h3>
-
-            <p>jQuery (MIT)<br>
-            https://github.com/jquery/jquery</p>
-
-            <p>jQuery Monlie(MIT):<br>
-            https://github.com/jquery/jquery-mobile</p>
-
-            <p>base64-utf8(MIT):<br>
-            https://github.com/vilien/base64-utf8</p>
-
-            <p>Trianglify(GPL-3.0):<br>
-            https://github.com/qrohlf/trianglify</p>
-
-            <p>localForage(Apache-2.0):<br>
-            https://github.com/localForage/localForage</p>
-        </div>
-    </div>
-
-    <div data-role="page" id="settings">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <h1>Settings</h1>
-        </div>
-
-        <div data-role="content">
-            <ul data-role='listview'>
-                <li>
-                    <a href="#search_settings">Search</a>
-                </li>
-
-                <li>
-                    <a hrefr="#sync_settings">Sync(In developing...)</a>
-                </li>
-
-                <li>
-                    <a href="#appearance_settings">Appearance</a>
-                </li>
-
-                <li>
-                    <a href="#debug_settings">Debug</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div data-role="page" id="search_settings">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
-                <a href="#" data-role="button" data-icon="check" onclick="saveSearchSettings()">Save</a> <a href="#" data-role=
-                "button" data-icon="refresh">Reset</a>
-            </div>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <div data-role="fieldcontain">
-                <label for="search_engine">Search engine:</label> <select name="search_engine" id="search_engine" onchange=
-                "search_engine_onchange()">
-                    <option value="baidu">
-                        Baidu
-                    </option>
-
-                    <option value="google">
-                        Google
-                    </option>
-
-                    <option value="bing">
-                        Bing
-                    </option>
-
-                    <option value="custom">
-                        Custom
-                    </option>
-                </select>
-            </div>
-
-            <div data-role="fieldcontain">
-                <label for="search_url">Search URL：</label> <input type="url" name="search_url" id="search_url" value=""
-                placeholder="Api URL">
-            </div>
-        </div>
-    </div>
-
-    <div data-role="page" id="sync_settings">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
-                <a href="#" data-role="button" data-icon="check" onclick="saveSyncSettings()">Save</a> <a href="#" data-role=
-                "button" data-icon="refresh">Reset</a>
-            </div>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <div data-role="fieldcontain">
-                <label for="sync_api">Sync Api URL：</label> <input type="text" name="sync_api" id="sync_api" value=""
-                placeholder="Api URL">
-            </div>
-
-            <div data-role="fieldcontain">
-                <label for="switch">Sync on load：</label> <select name="switch" id="sync_onload" data-role="slider">
-                    <option value="off">
-                        Off
-                    </option>
-
-                    <option value="on">
-                        On
-                    </option>
-                </select>
-            </div>
-        </div>
-    </div>
-
-    <div data-role="page" id="appearance_settings">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
-                <a href="#" data-role="button" data-iconpos="notext" data-icon="check" onclick="saveAppearanceSettings()">Save</a>
-                <a href="#" data-role="button" data-iconpos="notext" data-icon="refresh" onclick=
-                "resetAppearanceSettings()">Reset</a>
-            </div>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <div data-role="fieldcontain">
-                <label for="background_engine">Background Engine：</label> <select name="background_engine" id="background_engine"
-                onchange="background_engine_onchange()">
-                    <option value="tan">
-                        Trianglify
-                    </option>
-
-                    <option value="pic">
-                        Preset picture
-                    </option><!-- <option value="custom">Custom picture</option> -->
-                </select>
-            </div>
-
-            <p id="background_description" style="font-size: smaller;">...</p>
-
-            <div data-role="fieldcontain">
-                <label for="background_config">Background configure：</label> 
-                <textarea name="background_config" id="background_config" placeholder="Some configure">
-</textarea>
-            </div>
-        </div>
-    </div>
-
-    <div data-role="page" id="navi_editor">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a> <a href="#navi_adder"
-            data-role="button" class="ui-btn-right" data-iconpos="notext" data-icon="plus">Add</a>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <ul data-role="listview" id="navi_contain">
-                <!-- Hello -->
-            </ul>
-        </div>
-    </div>
-
-    <div data-role="page" id="navi_adder">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <ul data-role="listview" id="naviadd_contain">
-                <!-- Hello -->
-            </ul>
-        </div>
-    </div>
-	
-	    <div data-role="page" id="box_adder">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <ul data-role="listview" id="boxadd_contain">
-                 <li data-role="list-divider">Custom</li>
-				  <li><a onclick="addIconBox()">Icon Box</a></li>
-				 <li><a onclick="addHtmlBox()">HTML Box</a></li>
-				 <li data-role="list-divider">Preset</li>
-				 <li>Under construction....</li>
-            </ul>
-        </div>
-    </div>
-
+  <div data-role="page" id="extensions">
     <div data-role="header">
-        <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-        <h1><!-- . --></h1>
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1>Extensions</h1><a href="navi.html" data-role="button" class=
+      "ui-btn-right" data-icon="home" data-iconpos="notext"></a>
     </div>
-
-    <div data-role="page" id="htmlbox_editor">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
-                <a href="#" data-role="button" data-iconpos="notext" data-icon="check" onclick="saveHtmlBox()">Save</a> <a href="#"
-                data-role="button" data-iconpos="notext" data-icon="delete" onclick=
-                "confirmOperation(rmBox,&#39;You are trying to remove a HTML box.&#39;)">Remove</a>
-            </div>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <div data-role="fieldcontain">
-                <label for="htmlbox_name">Name：</label> <input type="text" name="htmlbox_name" id="htmlbox_name" value=""
-                placeholder="...">
-            </div>
-
-            <div data-role="fieldcontain">
-                <label for="htmlbox_code">HTML Code：</label> 
-                <textarea name="htmlbox_code" id="htmlbox_code" placeholder="Some configure">
-</textarea>
-            </div>
-
-            <p style="font-size: smaller;">Note: Every thing which can be used in &quot;body&quot; is allowed.<br>
-            jQuery is alreadly included.</p>
-        </div>
+    <div data-role="content">
+      <ul id="ex_list" data-role='listview'></ul>
+      <!-- <a id="template_a" class="hide" href="pi_watcher.ex.html" data-role="button" data-icon="info" data-iconpos="left">Settings</a> -->
     </div>
-
-    <div data-role="page" id="iconbox_editor">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a>
-
-            <div data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-btn-right">
-                <a href="#" data-role="button" data-iconpos="notext" data-icon="check" onclick="saveIconBox()">Save</a> <a href="#"
-                data-role="button" data-iconpos="notext" data-icon="delete" onclick=
-                "confirmOperation(rmBox,&#39;You are trying to remove a icon box.&#39;)">Remove</a>
-            </div>
-
-            <h1><!-- . --></h1>
-        </div>
-
-        <div data-role="content">
-            <div data-role="fieldcontain">
-                <label for="iconbox_icourl">Icon：</label> <a href="#" data-role="button" id="icon_display"><!--    --></a>
-            </div>
-
-            <div data-role="fieldcontain">
-                <input type="text" name="iconbox_icourl" id="iconbox_icourl" value="" placeholder="...">
-            </div>
-
-            <div data-role="fieldcontain">
-                <label for="iconbox_name">Name：</label> <input type="text" name="iconbox_name" id="iconbox_name" value=""
-                placeholder="...">
-            </div>
-
-            <div data-role="fieldcontain">
-                <label for="iconbox_href">Href：</label> <input type="text" name="iconbox_href" id="iconbox_href" value=""
-                placeholder="...">
-            </div>
-
-            <div data-role="fieldcontain">
-                <label for="iconbox_target">Target：</label> <input type="text" name="iconbox_target" id="iconbox_target" value=""
-                placeholder="...">
-            </div>
-        </div>
+  </div>
+  <div data-role="page" id="about">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1>About</h1><a href="navi.html" data-role="button" class=
+      "ui-btn-right" data-icon="home" data-iconpos="notext"></a>
     </div>
-
-    <div id="confirm_page" data-role="page">
-        <!-- data-role="dialog" -->
-
-        <div data-role="header">
-            <h1>ALRET</h1><a href="#" data-role="button" data-icon="check" class="ui-btn-right" data-iconpos="notext" onclick=
-            "operationTBC()">Yes</a>
-        </div>
-
-        <div data-role="content">
-            <h3>Are you SURE to continue?</h3>
-
-            <p id="info_TBS">...</p>
-
-            <p>This operation may be dangerous.</p>
-
-            <p>Please click on buttons on the top of page.</p>
-        </div>
+    <div data-role="content">
+      <div class="box">
+        <p><img class="icon" src="./favicon.png" alt=""></p>
+      </div>
+      <h3>Copas</h3>
+      <p>Your personal startpage.</p>
+      <h3>Thanks</h3>
+      <p>jQuery (MIT)<br>
+      https://github.com/jquery/jquery</p>
+      <p>jQuery Monlie(MIT):<br>
+      https://github.com/jquery/jquery-mobile</p>
+      <p>base64-utf8(MIT):<br>
+      https://github.com/vilien/base64-utf8</p>
+      <p>Trianglify(GPL-3.0):<br>
+      https://github.com/qrohlf/trianglify</p>
+      <p>localForage(Apache-2.0):<br>
+      https://github.com/localForage/localForage</p>
     </div>
-
-    <div data-role="page" id="debug_settings">
-        <div data-role="header">
-            <a href="#" data-role="button" data-rel="back" data-iconpos="notext" data-icon="back"></a> <a href="#" data-role=
-            "button" data-iconpos="notext" data-icon="check" onclick="saveDebugSettings()">Save</a>
-
-            <h1>-</h1>
-        </div>
-
-        <div data-role="content">
-            <div data-role="fieldcontain">
-                <label for="config_code">Configure Code：</label> 
-                <textarea name="config_code" id="config_code" placeholder="Some configure">
-</textarea> <label for="navi_code">Navi Code：</label> 
-                <textarea name="navi_code" id="navi_code" placeholder="Some configure">
-</textarea>
-            </div>
-        </div>
+  </div>
+  <div data-role="page" id="settings">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1>Settings</h1>
     </div>
+    <div data-role="content">
+      <ul data-role='listview'>
+        <li>
+          <a href="#search_settings">Search</a>
+        </li>
+        <li>
+          <a href="#appearance_settings">Appearance</a>
+        </li>
+        <li>
+          <a href="#sync_settings">Sync (In developing)</a>
+        </li>
+        <li>
+          <a href="#data_settings">Data</a>
+        </li>
+        <li>
+          <a href="#debug_settings">Debug</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+   <div data-role="page" id="data_settings">
+   <div data-role="header"><a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a><h1><!-- . --></h1></div>
+   <div data-role="content">
+   </div>
+   </div>
+  <div data-role="page" id="search_settings">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <div data-role="controlgroup" data-type="horizontal" data-mini=
+      "true" class="ui-btn-right">
+        <a href="#" data-role="button" data-icon="check" onclick=
+        "saveSearchSettings()">Save</a> <a href="#" data-role="button"
+        data-icon="refresh">Reset</a>
+      </div>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <div data-role="fieldcontain">
+        <label for="search_engine">Search engine:</label> <select name=
+        "search_engine" id="search_engine" onchange=
+        "search_engine_onchange()">
+          <option value="baidu">
+            Baidu
+          </option>
+          <option value="google">
+            Google
+          </option>
+          <option value="bing">
+            Bing
+          </option>
+          <option value="custom">
+            Custom
+          </option>
+        </select>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="search_url">Search URL：</label> <input type="url"
+        name="search_url" id="search_url" value="" placeholder=
+        "Api URL">
+      </div>
+    </div>
+  </div>
+  <div data-role="page" id="sync_settings">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <div data-role="controlgroup" data-type="horizontal" data-mini=
+      "true" class="ui-btn-right">
+        <a href="#" data-role="button" data-icon="check" onclick=
+        "saveSyncSettings()">Save</a> <a href="#" data-role="button"
+        data-icon="refresh">Reset</a>
+      </div>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <div data-role="fieldcontain">
+        <label for="sync_api">Sync Api URL：</label> <input type="text"
+        name="sync_api" id="sync_api" value="" placeholder="Api URL">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="switch">Sync on load：</label> <select name="switch"
+        id="sync_onload" data-role="slider">
+          <option value="off">
+            Off
+          </option>
+          <option value="on">
+            On
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div data-role="page" id="appearance_settings">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <div data-role="controlgroup" data-type="horizontal" data-mini=
+      "true" class="ui-btn-right">
+        <a href="#" data-role="button" data-iconpos="notext" data-icon=
+        "check" onclick="saveAppearanceSettings()">Save</a> <a href="#"
+        data-role="button" data-iconpos="notext" data-icon="refresh"
+        onclick="resetAppearanceSettings()">Reset</a>
+      </div>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <div data-role="fieldcontain">
+        <label for="background_engine">Background Engine：</label>
+        <select name="background_engine" id="background_engine"
+        onchange="background_engine_onchange()">
+          <option value="tan">
+            Trianglify
+          </option>
+          <option value="pic">
+            Preset picture
+          </option>
+          <!-- <option value="custom">Custom picture</option> -->
+        </select>
+      </div>
+      <p id="background_description" style="font-size: smaller;">
+      ...</p>
+      <div data-role="fieldcontain">
+        <label for="background_config">Background configure：</label> 
+        <textarea name="background_config" id="background_config"
+        placeholder="Some configure"></textarea>
+      </div>
+    </div>
+  </div>
+  <div data-role="page" id="navi_editor">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a> <a href="#navi_adder" data-role=
+      "button" class="ui-btn-right" data-iconpos="notext" data-icon=
+      "plus">Add</a>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview" id="navi_contain">
+        <!-- Hello -->
+      </ul>
+    </div>
+  </div>
+  <div data-role="page" id="navi_adder">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview" id="naviadd_contain">
+        <!-- Hello -->
+      </ul>
+    </div>
+  </div>
+  <div data-role="page" id="box_adder">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview" id="boxadd_contain">
+        <li data-role="list-divider">Custom</li>
+        <li>
+          <a onclick="addIconBox()">Icon Box</a>
+        </li>
+        <li>
+          <a onclick="addHtmlBox()">HTML Box</a>
+        </li>
+        <li data-role="list-divider">Preset</li>
+        <li>Under construction....</li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="header">
+    <a href="#" data-role="button" data-rel="back" data-iconpos=
+    "notext" data-icon="back"></a>
+    <h1><!-- . --></h1>
+  </div>
+  <div data-role="page" id="htmlbox_editor">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <div data-role="controlgroup" data-type="horizontal" data-mini=
+      "true" class="ui-btn-right">
+        <a href="#" data-role="button" data-iconpos="notext" data-icon=
+        "check" onclick="saveHtmlBox()">Save</a> <a href="#" data-role=
+        "button" data-iconpos="notext" data-icon="delete" onclick=
+        "confirmOperation(rmBox,&#39;You are trying to remove a HTML box.&#39;)">
+        Remove</a>
+      </div>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <div data-role="fieldcontain">
+        <label for="htmlbox_name">Name：</label> <input type="text"
+        name="htmlbox_name" id="htmlbox_name" value="" placeholder=
+        "...">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="htmlbox_code">HTML Code：</label> 
+        <textarea name="htmlbox_code" id="htmlbox_code" placeholder=
+        "Some configure"></textarea>
+      </div>
+      <p style="font-size: smaller;">Note: Every thing which can be
+      used in &quot;body&quot; is allowed.<br>
+      jQuery is alreadly included.</p>
+    </div>
+  </div>
+  <div data-role="page" id="iconbox_editor">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <div data-role="controlgroup" data-type="horizontal" data-mini=
+      "true" class="ui-btn-right">
+        <a href="#" data-role="button" data-iconpos="notext" data-icon=
+        "check" onclick="saveIconBox()">Save</a> <a href="#" data-role=
+        "button" data-iconpos="notext" data-icon="delete" onclick=
+        "confirmOperation(rmBox,&#39;You are trying to remove a icon box.&#39;)">
+        Remove</a>
+      </div>
+      <h1><!-- . --></h1>
+    </div>
+    <div data-role="content">
+      <div data-role="fieldcontain">
+        <label for="iconbox_icourl">Icon：</label> <a href="#"
+        data-role="button" id="icon_display"><!--    --></a>
+      </div>
+      <div data-role="fieldcontain">
+        <input type="text" name="iconbox_icourl" id="iconbox_icourl"
+        value="" placeholder="...">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="iconbox_name">Name：</label> <input type="text"
+        name="iconbox_name" id="iconbox_name" value="" placeholder=
+        "...">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="iconbox_href">Href：</label> <input type="text"
+        name="iconbox_href" id="iconbox_href" value="" placeholder=
+        "...">
+      </div>
+      <div data-role="fieldcontain">
+        <label for="iconbox_target">Target：</label> <input type="text"
+        name="iconbox_target" id="iconbox_target" value="" placeholder=
+        "...">
+      </div>
+    </div>
+  </div>
+  <div id="confirm_page" data-role="page">
+    <!-- data-role="dialog" -->
+    <div data-role="header">
+      <h1>ALRET</h1><a href="#" data-role="button" data-icon="check"
+      class="ui-btn-right" data-iconpos="notext" onclick=
+      "operationTBC()">Yes</a>
+    </div>
+    <div data-role="content">
+      <h3>Are you SURE to continue?</h3>
+      <p id="info_TBS">...</p>
+      <p>This operation may be dangerous.</p>
+      <p>Please click on buttons on the top of page.</p>
+    </div>
+  </div>
+  <div data-role="page" id="debug_settings">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a> <a href="#" data-role="button"
+      data-iconpos="notext" data-icon="check" onclick=
+      "saveDebugSettings()">Save</a>
+      <h1>-</h1>
+    </div>
+    <div data-role="content">
+      <div data-role="fieldcontain">
+        <label for="config_code">Configure Code：</label> 
+        <textarea name="config_code" id="config_code" placeholder=
+        "Some configure"></textarea> <label for="navi_code">Navi
+        Code：</label> 
+        <textarea name="navi_code" id="navi_code" placeholder=
+        "Some configure"></textarea>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

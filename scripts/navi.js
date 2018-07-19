@@ -31,9 +31,15 @@ function loadNavi() {
 	}
 }
 $(document).ready(function () {
-	try {
+	let p=setInterval(function(){
+		console.log("[Page] Try to get data");
+		if (parent.naviData != []) {
+    	try {
 		loadNavi();
+		clearInterval(p);
 	} catch (err) {
 		console.error("[Error]  " + err);
-	}
-});
+	}}
+},256);
+
+}); 
