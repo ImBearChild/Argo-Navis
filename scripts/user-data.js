@@ -25,19 +25,19 @@ var naviDef = [[{
 			"name": "Coolapk",
 			"href": "http://www.coolapk.com",
 			"target": "_self",
-			"icon": "./images/icons/coolapk.png"
+			"icon": "./images/navi-icons/coolapk.png"
 		}, {
 			"type": "iconbox",
 			"name": "Baidu",
 			"href": "http://www.baidu.com",
 			"target": "_blank",
-			"icon": "./images/icons/Hosts.png"
+			"icon": "./images/navi-icons/cookie.png"
 		}, {
 			"type": "iconbox",
 			"name": "Google",
 			"href": "http://www.google.com",
 			"target": "_blank",
-			"icon": "./images/icons/Google.png"
+			"icon": "./images/navi-icons/web/web-google.png"
 		}
 	], [{
 			"type": "html",
@@ -49,7 +49,7 @@ var naviDef = [[{
 			"name": "About",
 			"href": "misc.html#about",
 			"target": "_self",
-			"icon": "./images/icons/haha.png"
+			"icon": "./images/navi-icons/actions/help-info.png"
 		}
 	]]
 
@@ -135,4 +135,13 @@ function updateBackground() {
 		fn = "./images/wallpapers/" + fn + ".jpg";
 		$("#wrapper").css("background-image", "url(" + fn + ")");
 	}
+}
+
+function clearAllData() {
+	localforage.clear().then(function() {
+    console.log('Database is now empty.');
+}).catch(function(err) {
+    console.log(err);
+});
+location.reload();
 }

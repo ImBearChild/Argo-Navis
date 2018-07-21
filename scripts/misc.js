@@ -88,7 +88,7 @@ function loadExtensions() {
 	$.getJSON("./extensions/extensions.json", function (result) {
 		for (var i = 0; i < result.length; i++) {
 			console.log('[Extension Object] ' + result[i].name);
-			content = $("<li></li>").text("");
+			content = $("<li></li>");
 			var temp = $("<a></a>").text(result[i].name);
 			temp.attr("id", "gen_" + i);
 			temp.attr("data-ajax", "false");
@@ -271,4 +271,26 @@ $(document).on("pagebeforeshow", "#search_settings", function () {
 $(document).on("pagebeforeshow", "#navi_editor", function () {
 	$("#navi_contain").empty();
 	loadNaviSetting();
+});
+
+$(document).on("pageinit", "#icon_chooser", function () {
+	$("#icon_list").empty();
+	// TODO
+	$.getJSON("./images/navi-iconlist.json", function (result) {
+		for (var i = 0; i < result.length; i++) {
+			console.log('[Dir Object] ' + result[i].name);
+			let co = $("<li data-role='list-divider'></li>").text(result[i].name);
+			$("#icon_list").append(co);
+				for (var ii = 0; ii < result[i].icons.length; ii++) {
+					let li = $("<li></li>");
+					let a = $("<a></a>").text(result[i].icons[ii].name);
+					let img  = $("<img class='ui-li-icon'>");
+					img.attr("src",result[i].icons[ii].path);
+					a.append(img);
+					li.append(a);
+					$("#icon_list").append(li);
+		}
+		$("#icon_list").listview("refresh");
+	}
+});
 });

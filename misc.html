@@ -50,6 +50,8 @@
       https://github.com/qrohlf/trianglify</p>
       <p>localForage(Apache-2.0):<br>
       https://github.com/localForage/localForage</p>
+      <p>Paper-icon(BY-SA 4.0) <br> 
+      https://github.com/snwh/paper-icon-theme</p>
     </div>
   </div>
   <div data-role="page" id="settings">
@@ -66,9 +68,9 @@
         <li>
           <a href="#appearance_settings">Appearance</a>
         </li>
-        <li>
+       <!--  <li>
           <a href="#sync_settings">Sync (In developing)</a>
-        </li>
+        </li>-->
         <li>
           <a href="#data_settings">Data</a>
         </li>
@@ -85,6 +87,7 @@
    <div data-role="header"><a href="#" data-role="button" data-rel="back" data-iconpos=
       "notext" data-icon="back"></a><h1><!-- . --></h1></div>
    <div data-role="content">
+   <a href="#" data-role="button"onclick="confirmOperation(parent.clearAllData,&#39;You are trying to remove All your data.&#39;)">Clean All Data</a>
    </div>
    </div>
   <div data-role="page" id="search_settings">
@@ -288,10 +291,8 @@
     </div>
     <div data-role="content">
       <div data-role="fieldcontain">
-        <label for="iconbox_icourl">Icon：</label> <a href="#"
-        data-role="button" id="icon_display"><!--    --></a>
-      </div>
-      <div data-role="fieldcontain">
+        <label for="iconbox_icourl">Icon：</label> <a href="#icon_chooser"
+        data-role="button" id="icon_display">Choose a icon</a>
         <input type="text" name="iconbox_icourl" id="iconbox_icourl"
         value="" placeholder="...">
       </div>
@@ -312,9 +313,23 @@
       </div>
     </div>
   </div>
+  <div id="icon_chooser" data-role="page">
+      <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1><!-- . --></h1>
+    </div>
+  <div data-role="content">
+        <ul data-filter="true" data-role="listview" id="icon_list">
+        <!-- Hello -->
+      </ul>
+  </div>
+  </div>
   <div id="confirm_page" data-role="page">
     <!-- data-role="dialog" -->
     <div data-role="header">
+     <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
       <h1>ALRET</h1><a href="#" data-role="button" data-icon="check"
       class="ui-btn-right" data-iconpos="notext" onclick=
       "operationTBC()">Yes</a>

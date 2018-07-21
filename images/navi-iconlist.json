@@ -1,0 +1,2048 @@
+[
+  {
+    "icons": [
+      {
+        "name": "coolapk.png",
+        "path": "./images/navi-icons/coolapk.png"
+      },
+      {
+        "name": "cookie.png",
+        "path": "./images/navi-icons/cookie.png"
+      }
+    ],
+    "name": "root"
+  },
+  {
+    "icons": [
+      {
+        "name": "web-slack.png",
+        "path": "./images/navi-icons/web/web-slack.png"
+      },
+      {
+        "name": "web-evernote.png",
+        "path": "./images/navi-icons/web/web-evernote.png"
+      },
+      {
+        "name": "web-google-hangouts.png",
+        "path": "./images/navi-icons/web/web-google-hangouts.png"
+      },
+      {
+        "name": "web-foursquare.png",
+        "path": "./images/navi-icons/web/web-foursquare.png"
+      },
+      {
+        "name": "web-whatsapp.png",
+        "path": "./images/navi-icons/web/web-whatsapp.png"
+      },
+      {
+        "name": "web-dropbox.png",
+        "path": "./images/navi-icons/web/web-dropbox.png"
+      },
+      {
+        "name": "web-google-play-music.png",
+        "path": "./images/navi-icons/web/web-google-play-music.png"
+      },
+      {
+        "name": "web-yahoo.png",
+        "path": "./images/navi-icons/web/web-yahoo.png"
+      },
+      {
+        "name": "web-owncloud.png",
+        "path": "./images/navi-icons/web/web-owncloud.png"
+      },
+      {
+        "name": "web-facebook.png",
+        "path": "./images/navi-icons/web/web-facebook.png"
+      },
+      {
+        "name": "web-youtube.png",
+        "path": "./images/navi-icons/web/web-youtube.png"
+      },
+      {
+        "name": "web-reddit.png",
+        "path": "./images/navi-icons/web/web-reddit.png"
+      },
+      {
+        "name": "web-telegram.png",
+        "path": "./images/navi-icons/web/web-telegram.png"
+      },
+      {
+        "name": "web-twitter.png",
+        "path": "./images/navi-icons/web/web-twitter.png"
+      },
+      {
+        "name": "web-google.png",
+        "path": "./images/navi-icons/web/web-google.png"
+      },
+      {
+        "name": "web-plex.png",
+        "path": "./images/navi-icons/web/web-plex.png"
+      },
+      {
+        "name": "web-facebook-messenger.png",
+        "path": "./images/navi-icons/web/web-facebook-messenger.png"
+      },
+      {
+        "name": "web-microsoft.png",
+        "path": "./images/navi-icons/web/web-microsoft.png"
+      },
+      {
+        "name": "web-gitter.png",
+        "path": "./images/navi-icons/web/web-gitter.png"
+      },
+      {
+        "name": "web-lastfm.png",
+        "path": "./images/navi-icons/web/web-lastfm.png"
+      },
+      {
+        "name": "web-flickr.png",
+        "path": "./images/navi-icons/web/web-flickr.png"
+      },
+      {
+        "name": "web-amazon.png",
+        "path": "./images/navi-icons/web/web-amazon.png"
+      },
+      {
+        "name": "web-google-drive.png",
+        "path": "./images/navi-icons/web/web-google-drive.png"
+      },
+      {
+        "name": "web-pocket.png",
+        "path": "./images/navi-icons/web/web-pocket.png"
+      },
+      {
+        "name": "web-google-plus.png",
+        "path": "./images/navi-icons/web/web-google-plus.png"
+      }
+    ],
+    "name": "web"
+  },
+  {
+    "icons": [
+      {
+        "name": "preferences-system-sharing.png",
+        "path": "./images/navi-icons/apps/preferences-system-sharing.png"
+      },
+      {
+        "name": "system-file-manager.png",
+        "path": "./images/navi-icons/apps/system-file-manager.png"
+      },
+      {
+        "name": "accessories-notes.png",
+        "path": "./images/navi-icons/apps/accessories-notes.png"
+      },
+      {
+        "name": "internet-chat.png",
+        "path": "./images/navi-icons/apps/internet-chat.png"
+      },
+      {
+        "name": "terminator.png",
+        "path": "./images/navi-icons/apps/terminator.png"
+      },
+      {
+        "name": "calendar-blue-30.png",
+        "path": "./images/navi-icons/apps/calendar-blue-30.png"
+      },
+      {
+        "name": "popcorn-time.png",
+        "path": "./images/navi-icons/apps/popcorn-time.png"
+      },
+      {
+        "name": "preferences-system-windows.png",
+        "path": "./images/navi-icons/apps/preferences-system-windows.png"
+      },
+      {
+        "name": "netbeans.png",
+        "path": "./images/navi-icons/apps/netbeans.png"
+      },
+      {
+        "name": "calendar-red-08.png",
+        "path": "./images/navi-icons/apps/calendar-red-08.png"
+      },
+      {
+        "name": "disk-burner.png",
+        "path": "./images/navi-icons/apps/disk-burner.png"
+      },
+      {
+        "name": "password-manager.png",
+        "path": "./images/navi-icons/apps/password-manager.png"
+      },
+      {
+        "name": "calendar-purple-22.png",
+        "path": "./images/navi-icons/apps/calendar-purple-22.png"
+      },
+      {
+        "name": "focuswriter.png",
+        "path": "./images/navi-icons/apps/focuswriter.png"
+      },
+      {
+        "name": "calendar-red-16.png",
+        "path": "./images/navi-icons/apps/calendar-red-16.png"
+      },
+      {
+        "name": "preferences-system-notifications.png",
+        "path": "./images/navi-icons/apps/preferences-system-notifications.png"
+      },
+      {
+        "name": "calendar-purple-23.png",
+        "path": "./images/navi-icons/apps/calendar-purple-23.png"
+      },
+      {
+        "name": "skype-call-recorder.png",
+        "path": "./images/navi-icons/apps/skype-call-recorder.png"
+      },
+      {
+        "name": "visual-studio-code.png",
+        "path": "./images/navi-icons/apps/visual-studio-code.png"
+      },
+      {
+        "name": "calendar-purple-04.png",
+        "path": "./images/navi-icons/apps/calendar-purple-04.png"
+      },
+      {
+        "name": "utilities-x-terminal.png",
+        "path": "./images/navi-icons/apps/utilities-x-terminal.png"
+      },
+      {
+        "name": "android-sdk.png",
+        "path": "./images/navi-icons/apps/android-sdk.png"
+      },
+      {
+        "name": "calendar-red-15.png",
+        "path": "./images/navi-icons/apps/calendar-red-15.png"
+      },
+      {
+        "name": "vocal.png",
+        "path": "./images/navi-icons/apps/vocal.png"
+      },
+      {
+        "name": "setroubleshoot_icon.png",
+        "path": "./images/navi-icons/apps/setroubleshoot_icon.png"
+      },
+      {
+        "name": "preferences-web-browser-shortcuts.png",
+        "path": "./images/navi-icons/apps/preferences-web-browser-shortcuts.png"
+      },
+      {
+        "name": "teamviewer.png",
+        "path": "./images/navi-icons/apps/teamviewer.png"
+      },
+      {
+        "name": "shutter.png",
+        "path": "./images/navi-icons/apps/shutter.png"
+      },
+      {
+        "name": "calendar-purple-19.png",
+        "path": "./images/navi-icons/apps/calendar-purple-19.png"
+      },
+      {
+        "name": "system-config-firewall.png",
+        "path": "./images/navi-icons/apps/system-config-firewall.png"
+      },
+      {
+        "name": "skype.png",
+        "path": "./images/navi-icons/apps/skype.png"
+      },
+      {
+        "name": "wps-writer.png",
+        "path": "./images/navi-icons/apps/wps-writer.png"
+      },
+      {
+        "name": "synergy.png",
+        "path": "./images/navi-icons/apps/synergy.png"
+      },
+      {
+        "name": "vlc.png",
+        "path": "./images/navi-icons/apps/vlc.png"
+      },
+      {
+        "name": "cmake.png",
+        "path": "./images/navi-icons/apps/cmake.png"
+      },
+      {
+        "name": "preferences-desktop-effects.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-effects.png"
+      },
+      {
+        "name": "utilities-root-terminal.png",
+        "path": "./images/navi-icons/apps/utilities-root-terminal.png"
+      },
+      {
+        "name": "luminance-hdr.png",
+        "path": "./images/navi-icons/apps/luminance-hdr.png"
+      },
+      {
+        "name": "calendar-red-20.png",
+        "path": "./images/navi-icons/apps/calendar-red-20.png"
+      },
+      {
+        "name": "system-software-update.png",
+        "path": "./images/navi-icons/apps/system-software-update.png"
+      },
+      {
+        "name": "calendar-red-04.png",
+        "path": "./images/navi-icons/apps/calendar-red-04.png"
+      },
+      {
+        "name": "calendar-purple-11.png",
+        "path": "./images/navi-icons/apps/calendar-purple-11.png"
+      },
+      {
+        "name": "uget.png",
+        "path": "./images/navi-icons/apps/uget.png"
+      },
+      {
+        "name": "ibus.png",
+        "path": "./images/navi-icons/apps/ibus.png"
+      },
+      {
+        "name": "calendar-purple-05.png",
+        "path": "./images/navi-icons/apps/calendar-purple-05.png"
+      },
+      {
+        "name": "gnome-photos.png",
+        "path": "./images/navi-icons/apps/gnome-photos.png"
+      },
+      {
+        "name": "museeq.png",
+        "path": "./images/navi-icons/apps/museeq.png"
+      },
+      {
+        "name": "birdie.png",
+        "path": "./images/navi-icons/apps/birdie.png"
+      },
+      {
+        "name": "accessories-document-viewer.png",
+        "path": "./images/navi-icons/apps/accessories-document-viewer.png"
+      },
+      {
+        "name": "steam.png",
+        "path": "./images/navi-icons/apps/steam.png"
+      },
+      {
+        "name": "libreoffice-writer.png",
+        "path": "./images/navi-icons/apps/libreoffice-writer.png"
+      },
+      {
+        "name": "wireshark.png",
+        "path": "./images/navi-icons/apps/wireshark.png"
+      },
+      {
+        "name": "darktable.png",
+        "path": "./images/navi-icons/apps/darktable.png"
+      },
+      {
+        "name": "xmind.png",
+        "path": "./images/navi-icons/apps/xmind.png"
+      },
+      {
+        "name": "quassel.png",
+        "path": "./images/navi-icons/apps/quassel.png"
+      },
+      {
+        "name": "audacious.png",
+        "path": "./images/navi-icons/apps/audacious.png"
+      },
+      {
+        "name": "disk-utility.png",
+        "path": "./images/navi-icons/apps/disk-utility.png"
+      },
+      {
+        "name": "calendar-purple-17.png",
+        "path": "./images/navi-icons/apps/calendar-purple-17.png"
+      },
+      {
+        "name": "eclipse.png",
+        "path": "./images/navi-icons/apps/eclipse.png"
+      },
+      {
+        "name": "calendar-blue-16.png",
+        "path": "./images/navi-icons/apps/calendar-blue-16.png"
+      },
+      {
+        "name": "calendar-purple-16.png",
+        "path": "./images/navi-icons/apps/calendar-purple-16.png"
+      },
+      {
+        "name": "gnome-aisleriot.png",
+        "path": "./images/navi-icons/apps/gnome-aisleriot.png"
+      },
+      {
+        "name": "vivaldi.png",
+        "path": "./images/navi-icons/apps/vivaldi.png"
+      },
+      {
+        "name": "mpv.png",
+        "path": "./images/navi-icons/apps/mpv.png"
+      },
+      {
+        "name": "calendar-red-03.png",
+        "path": "./images/navi-icons/apps/calendar-red-03.png"
+      },
+      {
+        "name": "preferences-system-search.png",
+        "path": "./images/navi-icons/apps/preferences-system-search.png"
+      },
+      {
+        "name": "gnome-weather.png",
+        "path": "./images/navi-icons/apps/gnome-weather.png"
+      },
+      {
+        "name": "calendar-blue-29.png",
+        "path": "./images/navi-icons/apps/calendar-blue-29.png"
+      },
+      {
+        "name": "fluxgui.png",
+        "path": "./images/navi-icons/apps/fluxgui.png"
+      },
+      {
+        "name": "calendar-red-14.png",
+        "path": "./images/navi-icons/apps/calendar-red-14.png"
+      },
+      {
+        "name": "bleachbit.png",
+        "path": "./images/navi-icons/apps/bleachbit.png"
+      },
+      {
+        "name": "calendar-blue-01.png",
+        "path": "./images/navi-icons/apps/calendar-blue-01.png"
+      },
+      {
+        "name": "calendar-purple-12.png",
+        "path": "./images/navi-icons/apps/calendar-purple-12.png"
+      },
+      {
+        "name": "amarok.png",
+        "path": "./images/navi-icons/apps/amarok.png"
+      },
+      {
+        "name": "syncthing.png",
+        "path": "./images/navi-icons/apps/syncthing.png"
+      },
+      {
+        "name": "calendar-purple-31.png",
+        "path": "./images/navi-icons/apps/calendar-purple-31.png"
+      },
+      {
+        "name": "system-log-viewer.png",
+        "path": "./images/navi-icons/apps/system-log-viewer.png"
+      },
+      {
+        "name": "nvidia-settings.png",
+        "path": "./images/navi-icons/apps/nvidia-settings.png"
+      },
+      {
+        "name": "fingerprint-gui.png",
+        "path": "./images/navi-icons/apps/fingerprint-gui.png"
+      },
+      {
+        "name": "vmware-player.png",
+        "path": "./images/navi-icons/apps/vmware-player.png"
+      },
+      {
+        "name": "calendar-blue-19.png",
+        "path": "./images/navi-icons/apps/calendar-blue-19.png"
+      },
+      {
+        "name": "gnome-games.png",
+        "path": "./images/navi-icons/apps/gnome-games.png"
+      },
+      {
+        "name": "byobu.png",
+        "path": "./images/navi-icons/apps/byobu.png"
+      },
+      {
+        "name": "internet-web-browser.png",
+        "path": "./images/navi-icons/apps/internet-web-browser.png"
+      },
+      {
+        "name": "devassistant.png",
+        "path": "./images/navi-icons/apps/devassistant.png"
+      },
+      {
+        "name": "calendar-purple-20.png",
+        "path": "./images/navi-icons/apps/calendar-purple-20.png"
+      },
+      {
+        "name": "calendar-blue-08.png",
+        "path": "./images/navi-icons/apps/calendar-blue-08.png"
+      },
+      {
+        "name": "calendar-blue-14.png",
+        "path": "./images/navi-icons/apps/calendar-blue-14.png"
+      },
+      {
+        "name": "utilities-terminal.png",
+        "path": "./images/navi-icons/apps/utilities-terminal.png"
+      },
+      {
+        "name": "qt-logo.png",
+        "path": "./images/navi-icons/apps/qt-logo.png"
+      },
+      {
+        "name": "celestia.png",
+        "path": "./images/navi-icons/apps/celestia.png"
+      },
+      {
+        "name": "accessories-character-map.png",
+        "path": "./images/navi-icons/apps/accessories-character-map.png"
+      },
+      {
+        "name": "gnome-music.png",
+        "path": "./images/navi-icons/apps/gnome-music.png"
+      },
+      {
+        "name": "sublime-text-3.png",
+        "path": "./images/navi-icons/apps/sublime-text-3.png"
+      },
+      {
+        "name": "guake.png",
+        "path": "./images/navi-icons/apps/guake.png"
+      },
+      {
+        "name": "lollypop.png",
+        "path": "./images/navi-icons/apps/lollypop.png"
+      },
+      {
+        "name": "zeal.png",
+        "path": "./images/navi-icons/apps/zeal.png"
+      },
+      {
+        "name": "five-or-more.png",
+        "path": "./images/navi-icons/apps/five-or-more.png"
+      },
+      {
+        "name": "libreoffice-impress.png",
+        "path": "./images/navi-icons/apps/libreoffice-impress.png"
+      },
+      {
+        "name": "brave.png",
+        "path": "./images/navi-icons/apps/brave.png"
+      },
+      {
+        "name": "calendar-blue-13.png",
+        "path": "./images/navi-icons/apps/calendar-blue-13.png"
+      },
+      {
+        "name": "ibus-bopomofo.png",
+        "path": "./images/navi-icons/apps/ibus-bopomofo.png"
+      },
+      {
+        "name": "kodi.png",
+        "path": "./images/navi-icons/apps/kodi.png"
+      },
+      {
+        "name": "pdf-utility.png",
+        "path": "./images/navi-icons/apps/pdf-utility.png"
+      },
+      {
+        "name": "calendar-red-17.png",
+        "path": "./images/navi-icons/apps/calendar-red-17.png"
+      },
+      {
+        "name": "multimedia-photo-viewer.png",
+        "path": "./images/navi-icons/apps/multimedia-photo-viewer.png"
+      },
+      {
+        "name": "wine.png",
+        "path": "./images/navi-icons/apps/wine.png"
+      },
+      {
+        "name": "pycharm.png",
+        "path": "./images/navi-icons/apps/pycharm.png"
+      },
+      {
+        "name": "pdf-editor.png",
+        "path": "./images/navi-icons/apps/pdf-editor.png"
+      },
+      {
+        "name": "dbeaver.png",
+        "path": "./images/navi-icons/apps/dbeaver.png"
+      },
+      {
+        "name": "syntevo-smartgit.png",
+        "path": "./images/navi-icons/apps/syntevo-smartgit.png"
+      },
+      {
+        "name": "docky.png",
+        "path": "./images/navi-icons/apps/docky.png"
+      },
+      {
+        "name": "antimicro.png",
+        "path": "./images/navi-icons/apps/antimicro.png"
+      },
+      {
+        "name": "calendar-purple-21.png",
+        "path": "./images/navi-icons/apps/calendar-purple-21.png"
+      },
+      {
+        "name": "stellarium.png",
+        "path": "./images/navi-icons/apps/stellarium.png"
+      },
+      {
+        "name": "accessories-paint.png",
+        "path": "./images/navi-icons/apps/accessories-paint.png"
+      },
+      {
+        "name": "ibus-pinyin.png",
+        "path": "./images/navi-icons/apps/ibus-pinyin.png"
+      },
+      {
+        "name": "qt-creator.png",
+        "path": "./images/navi-icons/apps/qt-creator.png"
+      },
+      {
+        "name": "calendar-blue-23.png",
+        "path": "./images/navi-icons/apps/calendar-blue-23.png"
+      },
+      {
+        "name": "calendar-blue-26.png",
+        "path": "./images/navi-icons/apps/calendar-blue-26.png"
+      },
+      {
+        "name": "adobe-flash.png",
+        "path": "./images/navi-icons/apps/adobe-flash.png"
+      },
+      {
+        "name": "calendar-blue-10.png",
+        "path": "./images/navi-icons/apps/calendar-blue-10.png"
+      },
+      {
+        "name": "mgba.png",
+        "path": "./images/navi-icons/apps/mgba.png"
+      },
+      {
+        "name": "bitcoin.png",
+        "path": "./images/navi-icons/apps/bitcoin.png"
+      },
+      {
+        "name": "preferences-system-bluetooth.png",
+        "path": "./images/navi-icons/apps/preferences-system-bluetooth.png"
+      },
+      {
+        "name": "yast.png",
+        "path": "./images/navi-icons/apps/yast.png"
+      },
+      {
+        "name": "calendar-purple-03.png",
+        "path": "./images/navi-icons/apps/calendar-purple-03.png"
+      },
+      {
+        "name": "accessories-dictionary.png",
+        "path": "./images/navi-icons/apps/accessories-dictionary.png"
+      },
+      {
+        "name": "pidgin.png",
+        "path": "./images/navi-icons/apps/pidgin.png"
+      },
+      {
+        "name": "pgadmin.png",
+        "path": "./images/navi-icons/apps/pgadmin.png"
+      },
+      {
+        "name": "calendar-purple-08.png",
+        "path": "./images/navi-icons/apps/calendar-purple-08.png"
+      },
+      {
+        "name": "hwinfo.png",
+        "path": "./images/navi-icons/apps/hwinfo.png"
+      },
+      {
+        "name": "accessories-camera.png",
+        "path": "./images/navi-icons/apps/accessories-camera.png"
+      },
+      {
+        "name": "java.png",
+        "path": "./images/navi-icons/apps/java.png"
+      },
+      {
+        "name": "office-address-book.png",
+        "path": "./images/navi-icons/apps/office-address-book.png"
+      },
+      {
+        "name": "smuxi.png",
+        "path": "./images/navi-icons/apps/smuxi.png"
+      },
+      {
+        "name": "calendar-blue-15.png",
+        "path": "./images/navi-icons/apps/calendar-blue-15.png"
+      },
+      {
+        "name": "ubuntu-sdk.png",
+        "path": "./images/navi-icons/apps/ubuntu-sdk.png"
+      },
+      {
+        "name": "multimedia-video-player.png",
+        "path": "./images/navi-icons/apps/multimedia-video-player.png"
+      },
+      {
+        "name": "mumble.png",
+        "path": "./images/navi-icons/apps/mumble.png"
+      },
+      {
+        "name": "preferences-desktop-hotcorners.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-hotcorners.png"
+      },
+      {
+        "name": "gitg.png",
+        "path": "./images/navi-icons/apps/gitg.png"
+      },
+      {
+        "name": "calendar-red-29.png",
+        "path": "./images/navi-icons/apps/calendar-red-29.png"
+      },
+      {
+        "name": "preferences-system-time.png",
+        "path": "./images/navi-icons/apps/preferences-system-time.png"
+      },
+      {
+        "name": "preferences-desktop-theme.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-theme.png"
+      },
+      {
+        "name": "calendar-purple-01.png",
+        "path": "./images/navi-icons/apps/calendar-purple-01.png"
+      },
+      {
+        "name": "exaile.png",
+        "path": "./images/navi-icons/apps/exaile.png"
+      },
+      {
+        "name": "libreoffice-draw.png",
+        "path": "./images/navi-icons/apps/libreoffice-draw.png"
+      },
+      {
+        "name": "anki.png",
+        "path": "./images/navi-icons/apps/anki.png"
+      },
+      {
+        "name": "sublime-text-2.png",
+        "path": "./images/navi-icons/apps/sublime-text-2.png"
+      },
+      {
+        "name": "nylas.png",
+        "path": "./images/navi-icons/apps/nylas.png"
+      },
+      {
+        "name": "hexchat.png",
+        "path": "./images/navi-icons/apps/hexchat.png"
+      },
+      {
+        "name": "preferences-desktop-keyboard-shortcuts.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-keyboard-shortcuts.png"
+      },
+      {
+        "name": "libreoffice-base.png",
+        "path": "./images/navi-icons/apps/libreoffice-base.png"
+      },
+      {
+        "name": "cairo-dock.png",
+        "path": "./images/navi-icons/apps/cairo-dock.png"
+      },
+      {
+        "name": "preferences-desktop-keyboard.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-keyboard.png"
+      },
+      {
+        "name": "calendar-purple-29.png",
+        "path": "./images/navi-icons/apps/calendar-purple-29.png"
+      },
+      {
+        "name": "iceweasel.png",
+        "path": "./images/navi-icons/apps/iceweasel.png"
+      },
+      {
+        "name": "geany.png",
+        "path": "./images/navi-icons/apps/geany.png"
+      },
+      {
+        "name": "mendeleydesktop.png",
+        "path": "./images/navi-icons/apps/mendeleydesktop.png"
+      },
+      {
+        "name": "accessories-clock.png",
+        "path": "./images/navi-icons/apps/accessories-clock.png"
+      },
+      {
+        "name": "calendar-purple-24.png",
+        "path": "./images/navi-icons/apps/calendar-purple-24.png"
+      },
+      {
+        "name": "glade.png",
+        "path": "./images/navi-icons/apps/glade.png"
+      },
+      {
+        "name": "libreoffice-calc.png",
+        "path": "./images/navi-icons/apps/libreoffice-calc.png"
+      },
+      {
+        "name": "fedy.png",
+        "path": "./images/navi-icons/apps/fedy.png"
+      },
+      {
+        "name": "preferences-management-service.png",
+        "path": "./images/navi-icons/apps/preferences-management-service.png"
+      },
+      {
+        "name": "calendar-red-22.png",
+        "path": "./images/navi-icons/apps/calendar-red-22.png"
+      },
+      {
+        "name": "intellij-idea.png",
+        "path": "./images/navi-icons/apps/intellij-idea.png"
+      },
+      {
+        "name": "utilities-terminal-alt.png",
+        "path": "./images/navi-icons/apps/utilities-terminal-alt.png"
+      },
+      {
+        "name": "calendar-red-10.png",
+        "path": "./images/navi-icons/apps/calendar-red-10.png"
+      },
+      {
+        "name": "calendar-red-01.png",
+        "path": "./images/navi-icons/apps/calendar-red-01.png"
+      },
+      {
+        "name": "calendar-red-02.png",
+        "path": "./images/navi-icons/apps/calendar-red-02.png"
+      },
+      {
+        "name": "session-properties.png",
+        "path": "./images/navi-icons/apps/session-properties.png"
+      },
+      {
+        "name": "calendar-purple-10.png",
+        "path": "./images/navi-icons/apps/calendar-purple-10.png"
+      },
+      {
+        "name": "calendar-blue-21.png",
+        "path": "./images/navi-icons/apps/calendar-blue-21.png"
+      },
+      {
+        "name": "calendar-red-19.png",
+        "path": "./images/navi-icons/apps/calendar-red-19.png"
+      },
+      {
+        "name": "video-editor.png",
+        "path": "./images/navi-icons/apps/video-editor.png"
+      },
+      {
+        "name": "calendar-red-27.png",
+        "path": "./images/navi-icons/apps/calendar-red-27.png"
+      },
+      {
+        "name": "calendar-blue-31.png",
+        "path": "./images/navi-icons/apps/calendar-blue-31.png"
+      },
+      {
+        "name": "calendar-red-23.png",
+        "path": "./images/navi-icons/apps/calendar-red-23.png"
+      },
+      {
+        "name": "banshee.png",
+        "path": "./images/navi-icons/apps/banshee.png"
+      },
+      {
+        "name": "typora.png",
+        "path": "./images/navi-icons/apps/typora.png"
+      },
+      {
+        "name": "accessories-calculator.png",
+        "path": "./images/navi-icons/apps/accessories-calculator.png"
+      },
+      {
+        "name": "calendar-purple-09.png",
+        "path": "./images/navi-icons/apps/calendar-purple-09.png"
+      },
+      {
+        "name": "cantata.png",
+        "path": "./images/navi-icons/apps/cantata.png"
+      },
+      {
+        "name": "mathematica.png",
+        "path": "./images/navi-icons/apps/mathematica.png"
+      },
+      {
+        "name": "utilities-system-monitor.png",
+        "path": "./images/navi-icons/apps/utilities-system-monitor.png"
+      },
+      {
+        "name": "gvim.png",
+        "path": "./images/navi-icons/apps/gvim.png"
+      },
+      {
+        "name": "dosbox.png",
+        "path": "./images/navi-icons/apps/dosbox.png"
+      },
+      {
+        "name": "disk-usage-analyzer.png",
+        "path": "./images/navi-icons/apps/disk-usage-analyzer.png"
+      },
+      {
+        "name": "system-software-install.png",
+        "path": "./images/navi-icons/apps/system-software-install.png"
+      },
+      {
+        "name": "7zip.png",
+        "path": "./images/navi-icons/apps/7zip.png"
+      },
+      {
+        "name": "calendar-purple-18.png",
+        "path": "./images/navi-icons/apps/calendar-purple-18.png"
+      },
+      {
+        "name": "variety.png",
+        "path": "./images/navi-icons/apps/variety.png"
+      },
+      {
+        "name": "gimp.png",
+        "path": "./images/navi-icons/apps/gimp.png"
+      },
+      {
+        "name": "accessories-screenshot.png",
+        "path": "./images/navi-icons/apps/accessories-screenshot.png"
+      },
+      {
+        "name": "gnome-mplayer.png",
+        "path": "./images/navi-icons/apps/gnome-mplayer.png"
+      },
+      {
+        "name": "0ad.png",
+        "path": "./images/navi-icons/apps/0ad.png"
+      },
+      {
+        "name": "freecad.png",
+        "path": "./images/navi-icons/apps/freecad.png"
+      },
+      {
+        "name": "opera-developer.png",
+        "path": "./images/navi-icons/apps/opera-developer.png"
+      },
+      {
+        "name": "discord.png",
+        "path": "./images/navi-icons/apps/discord.png"
+      },
+      {
+        "name": "xchat.png",
+        "path": "./images/navi-icons/apps/xchat.png"
+      },
+      {
+        "name": "qbittorrent.png",
+        "path": "./images/navi-icons/apps/qbittorrent.png"
+      },
+      {
+        "name": "workspace-switcher.png",
+        "path": "./images/navi-icons/apps/workspace-switcher.png"
+      },
+      {
+        "name": "calendar-red-13.png",
+        "path": "./images/navi-icons/apps/calendar-red-13.png"
+      },
+      {
+        "name": "accessories-ebook-reader.png",
+        "path": "./images/navi-icons/apps/accessories-ebook-reader.png"
+      },
+      {
+        "name": "arduino.png",
+        "path": "./images/navi-icons/apps/arduino.png"
+      },
+      {
+        "name": "guake-prefs.png",
+        "path": "./images/navi-icons/apps/guake-prefs.png"
+      },
+      {
+        "name": "codeblocks.png",
+        "path": "./images/navi-icons/apps/codeblocks.png"
+      },
+      {
+        "name": "calendar-blue-18.png",
+        "path": "./images/navi-icons/apps/calendar-blue-18.png"
+      },
+      {
+        "name": "hexedit.png",
+        "path": "./images/navi-icons/apps/hexedit.png"
+      },
+      {
+        "name": "calendar-purple-13.png",
+        "path": "./images/navi-icons/apps/calendar-purple-13.png"
+      },
+      {
+        "name": "qt-designer.png",
+        "path": "./images/navi-icons/apps/qt-designer.png"
+      },
+      {
+        "name": "calendar-blue-09.png",
+        "path": "./images/navi-icons/apps/calendar-blue-09.png"
+      },
+      {
+        "name": "deluge.png",
+        "path": "./images/navi-icons/apps/deluge.png"
+      },
+      {
+        "name": "caffeine.png",
+        "path": "./images/navi-icons/apps/caffeine.png"
+      },
+      {
+        "name": "app-launcher.png",
+        "path": "./images/navi-icons/apps/app-launcher.png"
+      },
+      {
+        "name": "variety-slideshow.png",
+        "path": "./images/navi-icons/apps/variety-slideshow.png"
+      },
+      {
+        "name": "xnoise.png",
+        "path": "./images/navi-icons/apps/xnoise.png"
+      },
+      {
+        "name": "libreoffice.png",
+        "path": "./images/navi-icons/apps/libreoffice.png"
+      },
+      {
+        "name": "calendar-blue-07.png",
+        "path": "./images/navi-icons/apps/calendar-blue-07.png"
+      },
+      {
+        "name": "system-users.png",
+        "path": "./images/navi-icons/apps/system-users.png"
+      },
+      {
+        "name": "system-os-installer.png",
+        "path": "./images/navi-icons/apps/system-os-installer.png"
+      },
+      {
+        "name": "calendar-purple-02.png",
+        "path": "./images/navi-icons/apps/calendar-purple-02.png"
+      },
+      {
+        "name": "calendar-red-28.png",
+        "path": "./images/navi-icons/apps/calendar-red-28.png"
+      },
+      {
+        "name": "wps-spreadsheets.png",
+        "path": "./images/navi-icons/apps/wps-spreadsheets.png"
+      },
+      {
+        "name": "calendar-blue-24.png",
+        "path": "./images/navi-icons/apps/calendar-blue-24.png"
+      },
+      {
+        "name": "rstudio.png",
+        "path": "./images/navi-icons/apps/rstudio.png"
+      },
+      {
+        "name": "libreoffice-math.png",
+        "path": "./images/navi-icons/apps/libreoffice-math.png"
+      },
+      {
+        "name": "midori.png",
+        "path": "./images/navi-icons/apps/midori.png"
+      },
+      {
+        "name": "sound-recorder.png",
+        "path": "./images/navi-icons/apps/sound-recorder.png"
+      },
+      {
+        "name": "preferences-system-sound.png",
+        "path": "./images/navi-icons/apps/preferences-system-sound.png"
+      },
+      {
+        "name": "easytag.png",
+        "path": "./images/navi-icons/apps/easytag.png"
+      },
+      {
+        "name": "steam_icon_570.png",
+        "path": "./images/navi-icons/apps/steam_icon_570.png"
+      },
+      {
+        "name": "deja-dup.png",
+        "path": "./images/navi-icons/apps/deja-dup.png"
+      },
+      {
+        "name": "calendar-purple-25.png",
+        "path": "./images/navi-icons/apps/calendar-purple-25.png"
+      },
+      {
+        "name": "preferences-color.png",
+        "path": "./images/navi-icons/apps/preferences-color.png"
+      },
+      {
+        "name": "adobe-reader.png",
+        "path": "./images/navi-icons/apps/adobe-reader.png"
+      },
+      {
+        "name": "chromium-browser.png",
+        "path": "./images/navi-icons/apps/chromium-browser.png"
+      },
+      {
+        "name": "gnome-boxes.png",
+        "path": "./images/navi-icons/apps/gnome-boxes.png"
+      },
+      {
+        "name": "terminix.png",
+        "path": "./images/navi-icons/apps/terminix.png"
+      },
+      {
+        "name": "system-error.png",
+        "path": "./images/navi-icons/apps/system-error.png"
+      },
+      {
+        "name": "filezilla.png",
+        "path": "./images/navi-icons/apps/filezilla.png"
+      },
+      {
+        "name": "ghex.png",
+        "path": "./images/navi-icons/apps/ghex.png"
+      },
+      {
+        "name": "calendar-purple-06.png",
+        "path": "./images/navi-icons/apps/calendar-purple-06.png"
+      },
+      {
+        "name": "preferences-system-privacy.png",
+        "path": "./images/navi-icons/apps/preferences-system-privacy.png"
+      },
+      {
+        "name": "calendar-red-21.png",
+        "path": "./images/navi-icons/apps/calendar-red-21.png"
+      },
+      {
+        "name": "blender.png",
+        "path": "./images/navi-icons/apps/blender.png"
+      },
+      {
+        "name": "spotify.png",
+        "path": "./images/navi-icons/apps/spotify.png"
+      },
+      {
+        "name": "calendar-red-18.png",
+        "path": "./images/navi-icons/apps/calendar-red-18.png"
+      },
+      {
+        "name": "accessories-clipboard.png",
+        "path": "./images/navi-icons/apps/accessories-clipboard.png"
+      },
+      {
+        "name": "calendar-red-25.png",
+        "path": "./images/navi-icons/apps/calendar-red-25.png"
+      },
+      {
+        "name": "color-picker.png",
+        "path": "./images/navi-icons/apps/color-picker.png"
+      },
+      {
+        "name": "calendar-red-06.png",
+        "path": "./images/navi-icons/apps/calendar-red-06.png"
+      },
+      {
+        "name": "preferences-desktop-screensaver.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-screensaver.png"
+      },
+      {
+        "name": "archive-manager.png",
+        "path": "./images/navi-icons/apps/archive-manager.png"
+      },
+      {
+        "name": "wps-presentation.png",
+        "path": "./images/navi-icons/apps/wps-presentation.png"
+      },
+      {
+        "name": "linssid.png",
+        "path": "./images/navi-icons/apps/linssid.png"
+      },
+      {
+        "name": "monodoc.png",
+        "path": "./images/navi-icons/apps/monodoc.png"
+      },
+      {
+        "name": "firefox.png",
+        "path": "./images/navi-icons/apps/firefox.png"
+      },
+      {
+        "name": "help-browser.png",
+        "path": "./images/navi-icons/apps/help-browser.png"
+      },
+      {
+        "name": "calendar-red-24.png",
+        "path": "./images/navi-icons/apps/calendar-red-24.png"
+      },
+      {
+        "name": "retext.png",
+        "path": "./images/navi-icons/apps/retext.png"
+      },
+      {
+        "name": "preferences-web-browser.png",
+        "path": "./images/navi-icons/apps/preferences-web-browser.png"
+      },
+      {
+        "name": "irc-chat.png",
+        "path": "./images/navi-icons/apps/irc-chat.png"
+      },
+      {
+        "name": "calendar-purple-07.png",
+        "path": "./images/navi-icons/apps/calendar-purple-07.png"
+      },
+      {
+        "name": "soundconverter.png",
+        "path": "./images/navi-icons/apps/soundconverter.png"
+      },
+      {
+        "name": "qt-config.png",
+        "path": "./images/navi-icons/apps/qt-config.png"
+      },
+      {
+        "name": "transmission.png",
+        "path": "./images/navi-icons/apps/transmission.png"
+      },
+      {
+        "name": "doublecmd.png",
+        "path": "./images/navi-icons/apps/doublecmd.png"
+      },
+      {
+        "name": "atom.png",
+        "path": "./images/navi-icons/apps/atom.png"
+      },
+      {
+        "name": "inkscape.png",
+        "path": "./images/navi-icons/apps/inkscape.png"
+      },
+      {
+        "name": "calendar-red-07.png",
+        "path": "./images/navi-icons/apps/calendar-red-07.png"
+      },
+      {
+        "name": "preferences-system-brightness-lock.png",
+        "path": "./images/navi-icons/apps/preferences-system-brightness-lock.png"
+      },
+      {
+        "name": "gnome-2048.png",
+        "path": "./images/navi-icons/apps/gnome-2048.png"
+      },
+      {
+        "name": "zotero.png",
+        "path": "./images/navi-icons/apps/zotero.png"
+      },
+      {
+        "name": "virtualbox.png",
+        "path": "./images/navi-icons/apps/virtualbox.png"
+      },
+      {
+        "name": "tomahawk.png",
+        "path": "./images/navi-icons/apps/tomahawk.png"
+      },
+      {
+        "name": "r.png",
+        "path": "./images/navi-icons/apps/r.png"
+      },
+      {
+        "name": "calendar-purple-30.png",
+        "path": "./images/navi-icons/apps/calendar-purple-30.png"
+      },
+      {
+        "name": "zsnes.png",
+        "path": "./images/navi-icons/apps/zsnes.png"
+      },
+      {
+        "name": "internet-mail.png",
+        "path": "./images/navi-icons/apps/internet-mail.png"
+      },
+      {
+        "name": "calendar-blue-05.png",
+        "path": "./images/navi-icons/apps/calendar-blue-05.png"
+      },
+      {
+        "name": "dolphin-emu.png",
+        "path": "./images/navi-icons/apps/dolphin-emu.png"
+      },
+      {
+        "name": "gitkraken.png",
+        "path": "./images/navi-icons/apps/gitkraken.png"
+      },
+      {
+        "name": "cheese.png",
+        "path": "./images/navi-icons/apps/cheese.png"
+      },
+      {
+        "name": "builder.png",
+        "path": "./images/navi-icons/apps/builder.png"
+      },
+      {
+        "name": "scribus.png",
+        "path": "./images/navi-icons/apps/scribus.png"
+      },
+      {
+        "name": "calendar-purple-28.png",
+        "path": "./images/navi-icons/apps/calendar-purple-28.png"
+      },
+      {
+        "name": "preferences-desktop-display.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-display.png"
+      },
+      {
+        "name": "calendar-blue-28.png",
+        "path": "./images/navi-icons/apps/calendar-blue-28.png"
+      },
+      {
+        "name": "rhythmbox.png",
+        "path": "./images/navi-icons/apps/rhythmbox.png"
+      },
+      {
+        "name": "user-info.png",
+        "path": "./images/navi-icons/apps/user-info.png"
+      },
+      {
+        "name": "preferences-desktop-multimedia.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-multimedia.png"
+      },
+      {
+        "name": "opera.png",
+        "path": "./images/navi-icons/apps/opera.png"
+      },
+      {
+        "name": "homebank.png",
+        "path": "./images/navi-icons/apps/homebank.png"
+      },
+      {
+        "name": "gnome-subtitles.png",
+        "path": "./images/navi-icons/apps/gnome-subtitles.png"
+      },
+      {
+        "name": "calendar-red-12.png",
+        "path": "./images/navi-icons/apps/calendar-red-12.png"
+      },
+      {
+        "name": "calendar-purple-14.png",
+        "path": "./images/navi-icons/apps/calendar-purple-14.png"
+      },
+      {
+        "name": "calendar-red-30.png",
+        "path": "./images/navi-icons/apps/calendar-red-30.png"
+      },
+      {
+        "name": "disk-partition-manager.png",
+        "path": "./images/navi-icons/apps/disk-partition-manager.png"
+      },
+      {
+        "name": "firefox-nightly.png",
+        "path": "./images/navi-icons/apps/firefox-nightly.png"
+      },
+      {
+        "name": "google-chrome.png",
+        "path": "./images/navi-icons/apps/google-chrome.png"
+      },
+      {
+        "name": "office-calendar.png",
+        "path": "./images/navi-icons/apps/office-calendar.png"
+      },
+      {
+        "name": "multitasking-view.png",
+        "path": "./images/navi-icons/apps/multitasking-view.png"
+      },
+      {
+        "name": "internet-news-reader.png",
+        "path": "./images/navi-icons/apps/internet-news-reader.png"
+      },
+      {
+        "name": "sparkleshare.png",
+        "path": "./images/navi-icons/apps/sparkleshare.png"
+      },
+      {
+        "name": "calendar-blue-02.png",
+        "path": "./images/navi-icons/apps/calendar-blue-02.png"
+      },
+      {
+        "name": "calendar-blue-20.png",
+        "path": "./images/navi-icons/apps/calendar-blue-20.png"
+      },
+      {
+        "name": "meld.png",
+        "path": "./images/navi-icons/apps/meld.png"
+      },
+      {
+        "name": "preferences-desktop-accessibility.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-accessibility.png"
+      },
+      {
+        "name": "jockey.png",
+        "path": "./images/navi-icons/apps/jockey.png"
+      },
+      {
+        "name": "calendar-red-31.png",
+        "path": "./images/navi-icons/apps/calendar-red-31.png"
+      },
+      {
+        "name": "corebird.png",
+        "path": "./images/navi-icons/apps/corebird.png"
+      },
+      {
+        "name": "typecatcher.png",
+        "path": "./images/navi-icons/apps/typecatcher.png"
+      },
+      {
+        "name": "calendar-blue-06.png",
+        "path": "./images/navi-icons/apps/calendar-blue-06.png"
+      },
+      {
+        "name": "calendar-blue-27.png",
+        "path": "./images/navi-icons/apps/calendar-blue-27.png"
+      },
+      {
+        "name": "utilities-tweak-tool.png",
+        "path": "./images/navi-icons/apps/utilities-tweak-tool.png"
+      },
+      {
+        "name": "brackets.png",
+        "path": "./images/navi-icons/apps/brackets.png"
+      },
+      {
+        "name": "calendar-blue-17.png",
+        "path": "./images/navi-icons/apps/calendar-blue-17.png"
+      },
+      {
+        "name": "gnome-documents.png",
+        "path": "./images/navi-icons/apps/gnome-documents.png"
+      },
+      {
+        "name": "multimedia-audio-player.png",
+        "path": "./images/navi-icons/apps/multimedia-audio-player.png"
+      },
+      {
+        "name": "gnome-power-statistics.png",
+        "path": "./images/navi-icons/apps/gnome-power-statistics.png"
+      },
+      {
+        "name": "calendar-red-26.png",
+        "path": "./images/navi-icons/apps/calendar-red-26.png"
+      },
+      {
+        "name": "deadbeef.png",
+        "path": "./images/navi-icons/apps/deadbeef.png"
+      },
+      {
+        "name": "calendar-blue-03.png",
+        "path": "./images/navi-icons/apps/calendar-blue-03.png"
+      },
+      {
+        "name": "accessories-maps.png",
+        "path": "./images/navi-icons/apps/accessories-maps.png"
+      },
+      {
+        "name": "gnome-mahjongg.png",
+        "path": "./images/navi-icons/apps/gnome-mahjongg.png"
+      },
+      {
+        "name": "calendar-red-05.png",
+        "path": "./images/navi-icons/apps/calendar-red-05.png"
+      },
+      {
+        "name": "seafile-client.png",
+        "path": "./images/navi-icons/apps/seafile-client.png"
+      },
+      {
+        "name": "software-store.png",
+        "path": "./images/navi-icons/apps/software-store.png"
+      },
+      {
+        "name": "insync.png",
+        "path": "./images/navi-icons/apps/insync.png"
+      },
+      {
+        "name": "system-software-package-manager.png",
+        "path": "./images/navi-icons/apps/system-software-package-manager.png"
+      },
+      {
+        "name": "emacs.png",
+        "path": "./images/navi-icons/apps/emacs.png"
+      },
+      {
+        "name": "mono-runtime.png",
+        "path": "./images/navi-icons/apps/mono-runtime.png"
+      },
+      {
+        "name": "redshift.png",
+        "path": "./images/navi-icons/apps/redshift.png"
+      },
+      {
+        "name": "calendar-purple-27.png",
+        "path": "./images/navi-icons/apps/calendar-purple-27.png"
+      },
+      {
+        "name": "calendar-blue-04.png",
+        "path": "./images/navi-icons/apps/calendar-blue-04.png"
+      },
+      {
+        "name": "gnome-nettool.png",
+        "path": "./images/navi-icons/apps/gnome-nettool.png"
+      },
+      {
+        "name": "rednotebook.png",
+        "path": "./images/navi-icons/apps/rednotebook.png"
+      },
+      {
+        "name": "discord-canary.png",
+        "path": "./images/navi-icons/apps/discord-canary.png"
+      },
+      {
+        "name": "youtube-dl.png",
+        "path": "./images/navi-icons/apps/youtube-dl.png"
+      },
+      {
+        "name": "clementine.png",
+        "path": "./images/navi-icons/apps/clementine.png"
+      },
+      {
+        "name": "winecfg.png",
+        "path": "./images/navi-icons/apps/winecfg.png"
+      },
+      {
+        "name": "gnome-todo.png",
+        "path": "./images/navi-icons/apps/gnome-todo.png"
+      },
+      {
+        "name": "remote-desktop.png",
+        "path": "./images/navi-icons/apps/remote-desktop.png"
+      },
+      {
+        "name": "minecraft.png",
+        "path": "./images/navi-icons/apps/minecraft.png"
+      },
+      {
+        "name": "openshot.png",
+        "path": "./images/navi-icons/apps/openshot.png"
+      },
+      {
+        "name": "calendar-purple-26.png",
+        "path": "./images/navi-icons/apps/calendar-purple-26.png"
+      },
+      {
+        "name": "mixxx-icon.png",
+        "path": "./images/navi-icons/apps/mixxx-icon.png"
+      },
+      {
+        "name": "calendar-blue-12.png",
+        "path": "./images/navi-icons/apps/calendar-blue-12.png"
+      },
+      {
+        "name": "calendar-red-09.png",
+        "path": "./images/navi-icons/apps/calendar-red-09.png"
+      },
+      {
+        "name": "qtox.png",
+        "path": "./images/navi-icons/apps/qtox.png"
+      },
+      {
+        "name": "desktop-panel.png",
+        "path": "./images/navi-icons/apps/desktop-panel.png"
+      },
+      {
+        "name": "accessories-text-editor.png",
+        "path": "./images/navi-icons/apps/accessories-text-editor.png"
+      },
+      {
+        "name": "multimedia-photo-manager.png",
+        "path": "./images/navi-icons/apps/multimedia-photo-manager.png"
+      },
+      {
+        "name": "calendar-blue-11.png",
+        "path": "./images/navi-icons/apps/calendar-blue-11.png"
+      },
+      {
+        "name": "calendar-red-11.png",
+        "path": "./images/navi-icons/apps/calendar-red-11.png"
+      },
+      {
+        "name": "preferences-desktop-wallpaper.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-wallpaper.png"
+      },
+      {
+        "name": "authy.png",
+        "path": "./images/navi-icons/apps/authy.png"
+      },
+      {
+        "name": "wine-help.png",
+        "path": "./images/navi-icons/apps/wine-help.png"
+      },
+      {
+        "name": "python.png",
+        "path": "./images/navi-icons/apps/python.png"
+      },
+      {
+        "name": "preferences-desktop-font.png",
+        "path": "./images/navi-icons/apps/preferences-desktop-font.png"
+      },
+      {
+        "name": "calendar-purple-15.png",
+        "path": "./images/navi-icons/apps/calendar-purple-15.png"
+      },
+      {
+        "name": "gnome-pomodoro.png",
+        "path": "./images/navi-icons/apps/gnome-pomodoro.png"
+      },
+      {
+        "name": "transmageddon.png",
+        "path": "./images/navi-icons/apps/transmageddon.png"
+      },
+      {
+        "name": "calendar-blue-25.png",
+        "path": "./images/navi-icons/apps/calendar-blue-25.png"
+      },
+      {
+        "name": "devhelp.png",
+        "path": "./images/navi-icons/apps/devhelp.png"
+      },
+      {
+        "name": "calendar-blue-22.png",
+        "path": "./images/navi-icons/apps/calendar-blue-22.png"
+      },
+      {
+        "name": "qt-assistant.png",
+        "path": "./images/navi-icons/apps/qt-assistant.png"
+      },
+      {
+        "name": "calibre.png",
+        "path": "./images/navi-icons/apps/calibre.png"
+      },
+      {
+        "name": "vmware-workstation.png",
+        "path": "./images/navi-icons/apps/vmware-workstation.png"
+      },
+      {
+        "name": "audacity.png",
+        "path": "./images/navi-icons/apps/audacity.png"
+      }
+    ],
+    "name": "apps"
+  },
+  {
+    "icons": [
+      {
+        "name": "folder-publicshare.png",
+        "path": "./images/navi-icons/places/folder-publicshare.png"
+      },
+      {
+        "name": "distributor-logo-mageia.png",
+        "path": "./images/navi-icons/places/distributor-logo-mageia.png"
+      },
+      {
+        "name": "folder-pictures.png",
+        "path": "./images/navi-icons/places/folder-pictures.png"
+      },
+      {
+        "name": "workspace-switcher-right-top.png",
+        "path": "./images/navi-icons/places/workspace-switcher-right-top.png"
+      },
+      {
+        "name": "folder-videos.png",
+        "path": "./images/navi-icons/places/folder-videos.png"
+      },
+      {
+        "name": "folder-dropbox.png",
+        "path": "./images/navi-icons/places/folder-dropbox.png"
+      },
+      {
+        "name": "folder-templates.png",
+        "path": "./images/navi-icons/places/folder-templates.png"
+      },
+      {
+        "name": "folder-git.png",
+        "path": "./images/navi-icons/places/folder-git.png"
+      },
+      {
+        "name": "distributor-logo-slackware.png",
+        "path": "./images/navi-icons/places/distributor-logo-slackware.png"
+      },
+      {
+        "name": "distributor-logo-manjaro.png",
+        "path": "./images/navi-icons/places/distributor-logo-manjaro.png"
+      },
+      {
+        "name": "distributor-logo-lubuntu.png",
+        "path": "./images/navi-icons/places/distributor-logo-lubuntu.png"
+      },
+      {
+        "name": "folder-red.png",
+        "path": "./images/navi-icons/places/folder-red.png"
+      },
+      {
+        "name": "folder-documents.png",
+        "path": "./images/navi-icons/places/folder-documents.png"
+      },
+      {
+        "name": "user-bookmarks.png",
+        "path": "./images/navi-icons/places/user-bookmarks.png"
+      },
+      {
+        "name": "folder-blue.png",
+        "path": "./images/navi-icons/places/folder-blue.png"
+      },
+      {
+        "name": "distributor-logo-debian.png",
+        "path": "./images/navi-icons/places/distributor-logo-debian.png"
+      },
+      {
+        "name": "folder-green.png",
+        "path": "./images/navi-icons/places/folder-green.png"
+      },
+      {
+        "name": "folder-grey.png",
+        "path": "./images/navi-icons/places/folder-grey.png"
+      },
+      {
+        "name": "distributor-logo-xubuntu.png",
+        "path": "./images/navi-icons/places/distributor-logo-xubuntu.png"
+      },
+      {
+        "name": "user-trash.png",
+        "path": "./images/navi-icons/places/user-trash.png"
+      },
+      {
+        "name": "distributor-logo-ubuntu-mate.png",
+        "path": "./images/navi-icons/places/distributor-logo-ubuntu-mate.png"
+      },
+      {
+        "name": "folder.png",
+        "path": "./images/navi-icons/places/folder.png"
+      },
+      {
+        "name": "distributor-logo-archlinux.png",
+        "path": "./images/navi-icons/places/distributor-logo-archlinux.png"
+      },
+      {
+        "name": "workspace-switcher-right-bottom.png",
+        "path": "./images/navi-icons/places/workspace-switcher-right-bottom.png"
+      },
+      {
+        "name": "folder-music.png",
+        "path": "./images/navi-icons/places/folder-music.png"
+      },
+      {
+        "name": "folder-download.png",
+        "path": "./images/navi-icons/places/folder-download.png"
+      },
+      {
+        "name": "folder-cyan.png",
+        "path": "./images/navi-icons/places/folder-cyan.png"
+      },
+      {
+        "name": "distributor-logo-antergos.png",
+        "path": "./images/navi-icons/places/distributor-logo-antergos.png"
+      },
+      {
+        "name": "folder-yellow.png",
+        "path": "./images/navi-icons/places/folder-yellow.png"
+      },
+      {
+        "name": "workspace-switcher-top-left.png",
+        "path": "./images/navi-icons/places/workspace-switcher-top-left.png"
+      },
+      {
+        "name": "distributor-logo-kubuntu.png",
+        "path": "./images/navi-icons/places/distributor-logo-kubuntu.png"
+      },
+      {
+        "name": "folder-black.png",
+        "path": "./images/navi-icons/places/folder-black.png"
+      },
+      {
+        "name": "user-desktop.png",
+        "path": "./images/navi-icons/places/user-desktop.png"
+      },
+      {
+        "name": "folder-cloud.png",
+        "path": "./images/navi-icons/places/folder-cloud.png"
+      },
+      {
+        "name": "folder-brown.png",
+        "path": "./images/navi-icons/places/folder-brown.png"
+      },
+      {
+        "name": "distributor-logo-elementaryos.png",
+        "path": "./images/navi-icons/places/distributor-logo-elementaryos.png"
+      },
+      {
+        "name": "distributor-logo-ubuntu-gnome.png",
+        "path": "./images/navi-icons/places/distributor-logo-ubuntu-gnome.png"
+      },
+      {
+        "name": "network-server.png",
+        "path": "./images/navi-icons/places/network-server.png"
+      },
+      {
+        "name": "folder-violet.png",
+        "path": "./images/navi-icons/places/folder-violet.png"
+      },
+      {
+        "name": "distributor-logo-korora.png",
+        "path": "./images/navi-icons/places/distributor-logo-korora.png"
+      },
+      {
+        "name": "distributor-logo-opensuse.png",
+        "path": "./images/navi-icons/places/distributor-logo-opensuse.png"
+      },
+      {
+        "name": "distributor-logo-fedora.png",
+        "path": "./images/navi-icons/places/distributor-logo-fedora.png"
+      },
+      {
+        "name": "folder-locked.png",
+        "path": "./images/navi-icons/places/folder-locked.png"
+      },
+      {
+        "name": "folder-recent.png",
+        "path": "./images/navi-icons/places/folder-recent.png"
+      },
+      {
+        "name": "distributor-logo-linux-mint.png",
+        "path": "./images/navi-icons/places/distributor-logo-linux-mint.png"
+      },
+      {
+        "name": "network-workgroup.png",
+        "path": "./images/navi-icons/places/network-workgroup.png"
+      },
+      {
+        "name": "distributor-logo-solus.png",
+        "path": "./images/navi-icons/places/distributor-logo-solus.png"
+      },
+      {
+        "name": "distributor-logo-ubuntu.png",
+        "path": "./images/navi-icons/places/distributor-logo-ubuntu.png"
+      },
+      {
+        "name": "folder-magenta.png",
+        "path": "./images/navi-icons/places/folder-magenta.png"
+      },
+      {
+        "name": "folder-remote.png",
+        "path": "./images/navi-icons/places/folder-remote.png"
+      },
+      {
+        "name": "workspace-switcher-left-bottom.png",
+        "path": "./images/navi-icons/places/workspace-switcher-left-bottom.png"
+      },
+      {
+        "name": "user-home.png",
+        "path": "./images/navi-icons/places/user-home.png"
+      },
+      {
+        "name": "folder-orange.png",
+        "path": "./images/navi-icons/places/folder-orange.png"
+      }
+    ],
+    "name": "places"
+  },
+  {
+    "icons": [
+      {
+        "name": "preferences-desktop-locale.png",
+        "path": "./images/navi-icons/categories/preferences-desktop-locale.png"
+      },
+      {
+        "name": "applications-office.png",
+        "path": "./images/navi-icons/categories/applications-office.png"
+      },
+      {
+        "name": "applications-science.png",
+        "path": "./images/navi-icons/categories/applications-science.png"
+      },
+      {
+        "name": "applications-accessories.png",
+        "path": "./images/navi-icons/categories/applications-accessories.png"
+      },
+      {
+        "name": "preferences-desktop-online-accounts.png",
+        "path": "./images/navi-icons/categories/preferences-desktop-online-accounts.png"
+      },
+      {
+        "name": "system-help.png",
+        "path": "./images/navi-icons/categories/system-help.png"
+      },
+      {
+        "name": "applications-python.png",
+        "path": "./images/navi-icons/categories/applications-python.png"
+      },
+      {
+        "name": "applications-system.png",
+        "path": "./images/navi-icons/categories/applications-system.png"
+      },
+      {
+        "name": "applications-internet.png",
+        "path": "./images/navi-icons/categories/applications-internet.png"
+      },
+      {
+        "name": "preferences-system-parental-controls.png",
+        "path": "./images/navi-icons/categories/preferences-system-parental-controls.png"
+      },
+      {
+        "name": "preferences-desktop.png",
+        "path": "./images/navi-icons/categories/preferences-desktop.png"
+      },
+      {
+        "name": "preferences-desktop-default-applications.png",
+        "path": "./images/navi-icons/categories/preferences-desktop-default-applications.png"
+      },
+      {
+        "name": "applications-puzzles.png",
+        "path": "./images/navi-icons/categories/applications-puzzles.png"
+      },
+      {
+        "name": "applications-mathematics.png",
+        "path": "./images/navi-icons/categories/applications-mathematics.png"
+      },
+      {
+        "name": "applications-font.png",
+        "path": "./images/navi-icons/categories/applications-font.png"
+      },
+      {
+        "name": "preferences-system-power.png",
+        "path": "./images/navi-icons/categories/preferences-system-power.png"
+      },
+      {
+        "name": "applications-development.png",
+        "path": "./images/navi-icons/categories/applications-development.png"
+      },
+      {
+        "name": "applications-graphics.png",
+        "path": "./images/navi-icons/categories/applications-graphics.png"
+      },
+      {
+        "name": "preferences-system-network.png",
+        "path": "./images/navi-icons/categories/preferences-system-network.png"
+      },
+      {
+        "name": "applications-games.png",
+        "path": "./images/navi-icons/categories/applications-games.png"
+      },
+      {
+        "name": "applications-other.png",
+        "path": "./images/navi-icons/categories/applications-other.png"
+      },
+      {
+        "name": "applications-utilities.png",
+        "path": "./images/navi-icons/categories/applications-utilities.png"
+      },
+      {
+        "name": "preferences-other.png",
+        "path": "./images/navi-icons/categories/preferences-other.png"
+      },
+      {
+        "name": "applications-multimedia.png",
+        "path": "./images/navi-icons/categories/applications-multimedia.png"
+      },
+      {
+        "name": "applications-engineering.png",
+        "path": "./images/navi-icons/categories/applications-engineering.png"
+      }
+    ],
+    "name": "categories"
+  },
+  {
+    "icons": [
+      {
+        "name": "edit-paste.png",
+        "path": "./images/navi-icons/actions/edit-paste.png"
+      },
+      {
+        "name": "system-log-out.png",
+        "path": "./images/navi-icons/actions/system-log-out.png"
+      },
+      {
+        "name": "help-info.png",
+        "path": "./images/navi-icons/actions/help-info.png"
+      },
+      {
+        "name": "help-contents.png",
+        "path": "./images/navi-icons/actions/help-contents.png"
+      },
+      {
+        "name": "mail-send-receive.png",
+        "path": "./images/navi-icons/actions/mail-send-receive.png"
+      },
+      {
+        "name": "system-hibernate.png",
+        "path": "./images/navi-icons/actions/system-hibernate.png"
+      },
+      {
+        "name": "document-print-preview.png",
+        "path": "./images/navi-icons/actions/document-print-preview.png"
+      },
+      {
+        "name": "mail-mark-notjunk.png",
+        "path": "./images/navi-icons/actions/mail-mark-notjunk.png"
+      },
+      {
+        "name": "go-down.png",
+        "path": "./images/navi-icons/actions/go-down.png"
+      },
+      {
+        "name": "mail-mark-junk.png",
+        "path": "./images/navi-icons/actions/mail-mark-junk.png"
+      },
+      {
+        "name": "zoom-in.png",
+        "path": "./images/navi-icons/actions/zoom-in.png"
+      },
+      {
+        "name": "system-reboot.png",
+        "path": "./images/navi-icons/actions/system-reboot.png"
+      },
+      {
+        "name": "process-stop.png",
+        "path": "./images/navi-icons/actions/process-stop.png"
+      },
+      {
+        "name": "mail-mark-important.png",
+        "path": "./images/navi-icons/actions/mail-mark-important.png"
+      },
+      {
+        "name": "document-open-recent.png",
+        "path": "./images/navi-icons/actions/document-open-recent.png"
+      },
+      {
+        "name": "system-lock-screen.png",
+        "path": "./images/navi-icons/actions/system-lock-screen.png"
+      },
+      {
+        "name": "go-up.png",
+        "path": "./images/navi-icons/actions/go-up.png"
+      },
+      {
+        "name": "zoom-out.png",
+        "path": "./images/navi-icons/actions/zoom-out.png"
+      },
+      {
+        "name": "zoom-original.png",
+        "path": "./images/navi-icons/actions/zoom-original.png"
+      },
+      {
+        "name": "go-previous.png",
+        "path": "./images/navi-icons/actions/go-previous.png"
+      },
+      {
+        "name": "system-shutdown.png",
+        "path": "./images/navi-icons/actions/system-shutdown.png"
+      },
+      {
+        "name": "help-faq.png",
+        "path": "./images/navi-icons/actions/help-faq.png"
+      },
+      {
+        "name": "system-suspend.png",
+        "path": "./images/navi-icons/actions/system-suspend.png"
+      },
+      {
+        "name": "go-next.png",
+        "path": "./images/navi-icons/actions/go-next.png"
+      },
+      {
+        "name": "help-about.png",
+        "path": "./images/navi-icons/actions/help-about.png"
+      },
+      {
+        "name": "document-print.png",
+        "path": "./images/navi-icons/actions/document-print.png"
+      }
+    ],
+    "name": "actions"
+  }
+]
