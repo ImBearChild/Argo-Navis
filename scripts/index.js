@@ -2,6 +2,8 @@
 var appShowed = 0; // 2=first 1=showed 0=hide
 var LrDivToggled = 0;
 
+$("#app_iframe").attr('src',"./navi.html#navi")
+
 function checkSubmit() {
 	var word = document.getElementById("word").value.trim();
 	if (word == "") {

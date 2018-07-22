@@ -143,5 +143,5 @@ function clearAllData() {
 }).catch(function(err) {
     console.log(err);
 });
-location.reload();
+location.assign(location.href.replace("#",""));
 }

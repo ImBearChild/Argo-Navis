@@ -152,10 +152,10 @@ function loadNaviAdder() {
 			let li = $("<li data-icon='plus'></li>").html(item);
 			$("#naviadd_contain").append(li);
 		}
-			item = $("<a href='#'></a>").text("Add a row here");
-			item.attr("onclick", "addRow(" + i + ")");
-			li = $("<li data-icon='plus'></li>").html(item);
-			$("#naviadd_contain").append(li);
+		item = $("<a href='#'></a>").text("Add a row here");
+		item.attr("onclick", "addRow(" + i + ")");
+		li = $("<li data-icon='plus'></li>").html(item);
+		$("#naviadd_contain").append(li);
 	}
 	$("#naviadd_contain").listview("refresh");
 }
@@ -163,18 +163,18 @@ function loadNaviAdder() {
 function addIconBox() {
 	let a = editObjNum[0];
 	let b = editObjNum[1];
-	let c = $.extend(true,{} , iconBoxPre);
-	parent.naviData[a].splice(b+1, 0,c);
-	editObjNum = [a, b+1];
+	let c = $.extend(true, {}, iconBoxPre);
+	parent.naviData[a].splice(b + 1, 0, c);
+	editObjNum = [a, b + 1];
 	parent.$("#app_iframe").attr("src", "./misc.html#iconbox_editor");
 }
 
 function addHtmlBox() {
 	let a = editObjNum[0];
 	let b = editObjNum[1];
-	let c = $.extend(true,{} , htmlBoxPre);
-	parent.naviData[a].splice(b+1, 0,c);
-	editObjNum = [a, b+1];
+	let c = $.extend(true, {}, htmlBoxPre);
+	parent.naviData[a].splice(b + 1, 0, c);
+	editObjNum = [a, b + 1];
 	parent.$("#app_iframe").attr("src", "./misc.html#htmlbox_editor");
 }
 
@@ -275,22 +275,6 @@ $(document).on("pagebeforeshow", "#navi_editor", function () {
 
 $(document).on("pageinit", "#icon_chooser", function () {
 	$("#icon_list").empty();
-	// TODO
-	$.getJSON("./images/navi-iconlist.json", function (result) {
-		for (var i = 0; i < result.length; i++) {
-			console.log('[Dir Object] ' + result[i].name);
-			let co = $("<li data-role='list-divider'></li>").text(result[i].name);
-			$("#icon_list").append(co);
-				for (var ii = 0; ii < result[i].icons.length; ii++) {
-					let li = $("<li></li>");
-					let a = $("<a></a>").text(result[i].icons[ii].name);
-					let img  = $("<img class='ui-li-icon'>");
-					img.attr("src",result[i].icons[ii].path);
-					a.append(img);
-					li.append(a);
-					$("#icon_list").append(li);
-		}
-		$("#icon_list").listview("refresh");
-	}
-});
+	$("#icon_list").load("./images/navi-iconlist.html",function() {
+	$("#icon_list").listview("refresh");} );
 });
