@@ -1,6 +1,7 @@
 #/usr/bin/env python3
 import os
 from dominate.tags import *
+from PIL import Image
 
 #list = []
 pre_dir_name = ""
@@ -35,6 +36,6 @@ for (root, dirs, files) in os.walk(os.getcwd()+"/navi-icons/",followlinks=False)
                 list += li(aa,herf="").render()
 
 
-f = open("navi-iconlist.html", "w+")
+f = open("navi-iconlist.txt", "w+")
 f.write(list)
 f.close()

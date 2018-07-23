@@ -275,6 +275,6 @@ $(document).on("pagebeforeshow", "#navi_editor", function () {
 
 $(document).on("pageinit", "#icon_chooser", function () {
 	$("#icon_list").empty();
-	$("#icon_list").load("./images/navi-iconlist.html",function() {
+	$("#icon_list").load("./images/navi-iconlist.txt",function() {
 	$("#icon_list").listview("refresh");} );
 });
