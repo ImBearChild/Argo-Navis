@@ -2,6 +2,7 @@
 var editObjNum = [0, 0];
 var operationTBC; // operation to be confirmed
 var infoTBS;
+var iconTBS;
 var iconBoxPre = {
 	"type": "iconbox",
 	"name": "...",
@@ -220,6 +221,10 @@ function search_engine_onchange() {
 	}
 }
 
+function passIcon(path) {
+	iconTBS = path;
+}
+
 $(document).on("pagebeforeshow", "#extensions", function () {
 	loadExtensions();
 });
@@ -273,8 +278,12 @@ $(document).on("pagebeforeshow", "#navi_editor", function () {
 	loadNaviSetting();
 });
 
-$(document).on("pageinit", "#icon_chooser", function () {
+$(document).on("pageinit", "#icon_selector", function () {
 	$("#icon_list").empty();
 	$("#icon_list").load("./images/navi-iconlist.txt",function() {
 	$("#icon_list").listview("refresh");} );
+});
+
+$(document).on("pagebeforeshow", "#icon_viewer", function () {
+	$("#icon_box_v").attr("src",iconTBS)
 });
