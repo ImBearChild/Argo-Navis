@@ -19,12 +19,12 @@ A prue, fast homepage for web browser
 ## 试用方法
 * 本项目还在开发中,功能不全
 * 可以直接访问  
-  https://imbearchild.github.io/Copas-Start/
+  https://imbearchild.github.io/Argo-Navis/
 * 本地体验建议使用临时服务器
 * (不推荐)可以直接打开 index.html 体验,但不能保证功能正常
 
 1. 下载  
-   git clone https://github.com/ImBearChild/Copas-Start.git  
+   git clone https://github.com/ImBearChild/Argo-Navis.git  
    或者 点击右上角"Clone or Dwonload" ,选择"Dwonload ZIP"
 
 2. 搭建服务器  
@@ -34,8 +34,8 @@ A prue, fast homepage for web browser
 
 3. 访问 localhost:8088/index.html
    
- ## 文档
-参见:https://github.com/ImBearChild/Copas-Start/wiki
+## 文档
+暂无
 
 ## 截图
 使用图片背景

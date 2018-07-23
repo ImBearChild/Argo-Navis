@@ -1,7 +1,7 @@
 #/usr/bin/env python3
 import os
 from dominate.tags import *
-from PIL import Image
+#from PIL import Image
 
 #list = []
 pre_dir_name = ""
