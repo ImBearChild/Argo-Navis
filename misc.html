@@ -3,7 +3,9 @@
 <head>
   <title></title>
   <meta charset="utf-8">
-  <link href="./styles/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/jquery.mobile.theme.min.css" />
+  <link rel="stylesheet" href="./styles/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="./styles/jquery.mobile.structure-1.4.5.min.css" />
   <script src="./scripts/jquery-1.11.1.min.js">
   </script>
   <script src="./scripts/jquery.mobile-1.4.5.min.js">
@@ -88,7 +90,7 @@
    <div data-role="header"><a href="#" data-role="button" data-rel="back" data-iconpos=
       "notext" data-icon="back"></a><h1><!-- . --></h1></div>
    <div data-role="content">
-   <a href="#" data-role="button"onclick="confirmOperation(parent.clearAllData,&#39;You are trying to remove All your data.&#39;)">Clean All Data</a>
+   <a href="#" data-role="button" data-theme="b" onclick="confirmOperation(parent.clearAllData,&#39;You are trying to remove All your data.&#39;)">Clean All Data</a>
    </div>
    </div>
   <div data-role="page" id="search_settings">
@@ -327,7 +329,7 @@
     <img src="" alt="Pic" id="icon_box_v" height="96" width="96">
     </div>
   </div>
-  <div id="confirm_page" data-role="page">
+  <div id="confirm_page" data-role="page" data-theme="b">
     <!-- data-role="dialog" -->
     <div data-role="header">
      <a href="#" data-role="button" data-rel="back" data-iconpos=
