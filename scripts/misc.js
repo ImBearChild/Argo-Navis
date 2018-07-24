@@ -1,7 +1,8 @@
 'use strict'
 var editObjNum = [0, 0];
 var operationTBC; // operation to be confirmed
-var infoTBS;
+var infoTBS = null;
+var iconTBS = null;
 var iconBoxPre = {
 	"type": "iconbox",
 	"name": "...",
@@ -39,6 +40,7 @@ function saveIconBox() {
 	parent.naviData[a][b].target = $("#iconbox_target").val();
 	parent.naviData[a][b].icon = $("#iconbox_icourl").val();
 	parent.saveNaviData();
+	showInfo("Data saved");
 }
 
 function saveHtmlBox() {
@@ -220,6 +222,15 @@ function search_engine_onchange() {
 	}
 }
 
+function passIcon(path) {
+	iconTBS = path;
+}
+
+function showInfo(info){
+	infoTBS = info;
+	parent.$("#app_iframe").attr('src', './misc.html#info_dialog');
+}
+
 $(document).on("pagebeforeshow", "#extensions", function () {
 	loadExtensions();
 });
@@ -234,7 +245,8 @@ $(document).on("pagebeforeshow", "#navi_adder", function () {
 });
 
 $(document).on("pagebeforeshow", "#confirm_page", function () {
-	$('#info_TBS').text(infoTBS);
+	$('#info_TBS_C').text(infoTBS);
+	infoTBS=null;
 });
 
 $(document).on("pagebeforeshow", "#htmlbox_editor", function () {
@@ -254,6 +266,13 @@ $(document).on("pagebeforeshow", "#iconbox_editor", function () {
 	$("#iconbox_href").val(parent.naviData[a][b].href);
 	$("#iconbox_target").val(parent.naviData[a][b].target);
 	$("#iconbox_icourl").val(parent.naviData[a][b].icon);
+	if (iconTBS != null) {
+	$("#iconbox_icourl").val(iconTBS);
+	$("#icon_shower").attr("src",iconTBS);
+	iconTBS = null;
+	} else {
+		$("#icon_shower").attr("src",parent.naviData[a][b].icon);
+	}
 });
 
 $(document).on("pagebeforeshow", "#appearance_settings", function () {
@@ -273,8 +292,19 @@ $(document).on("pagebeforeshow", "#navi_editor", function () {
 	loadNaviSetting();
 });
 
-$(document).on("pageinit", "#icon_chooser", function () {
+$(document).on("pageinit", "#icon_selector", function () {
 	$("#icon_list").empty();
 	$("#icon_list").load("./images/navi-iconlist.txt",function() {
 	$("#icon_list").listview("refresh");} );
 });
+
+$(document).on("pagebeforeshow", "#icon_viewer", function () {
+	$("#icon_box_v").attr("src",iconTBS);
+$("#save_icon_bt").attr("onclick","passIcon('"+iconTBS+"')");
+});
+
+$(document).on("pagebeforeshow", "#info_dialog", function () {
+	$('#info_TBS_I').text(infoTBS);
+	infoTBS=null;
+});
+	

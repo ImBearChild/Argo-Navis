@@ -14,6 +14,7 @@ A prue, fast homepage for web browser
 * 开发一个用于同步的后端
 
 ## 版本记录
+* Version 1.1(添加图标选择器)
 * Version 1.0(第一个正式版本)
 
 ## 试用方法
