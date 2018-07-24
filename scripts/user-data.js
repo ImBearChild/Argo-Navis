@@ -49,7 +49,7 @@ var naviDef = [[{
 			"name": "About",
 			"href": "misc.html#about",
 			"target": "_self",
-			"icon": "./images/navi-icons/actions/help-info.png"
+			"icon": "./images/help-info.png"
 		}
 	]]
 
