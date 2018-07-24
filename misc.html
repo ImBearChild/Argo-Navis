@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <div data-role="page" id="extensions">
+<!--   <div data-role="page" id="extensions">
     <div data-role="header">
       <a href="#" data-role="button" data-rel="back" data-iconpos=
       "notext" data-icon="back"></a>
@@ -23,9 +23,9 @@
     </div>
     <div data-role="content">
       <ul id="ex_list" data-role='listview'></ul>
-      <!-- <a id="template_a" class="hide" href="pi_watcher.ex.html" data-role="button" data-icon="info" data-iconpos="left">Settings</a> -->
+     Example: <a id="template_a" class="hide" href="pi_watcher.ex.html" data-role="button" data-icon="info" data-iconpos="left">Settings</a>
     </div>
-  </div>
+  </div> -->
   <div data-role="page" id="about">
     <div data-role="header">
       <a href="#" data-role="button" data-rel="back" data-iconpos=
@@ -39,6 +39,7 @@
       </div>
       <h3>Argo Navis</h3>
       <p>Your personal startpage.</p>
+      <p>Version 1.1</p>
       <h3>Thanks</h3>
       <p>jQuery (MIT)<br>
       https://github.com/jquery/jquery</p>
@@ -277,10 +278,10 @@
       <h1><!-- . --></h1>
     </div>
     <div data-role="content">
-<!--      <div data-role="fieldcontain">
-        <label for="iconbox_icourl">Icon：</label> <a href="#icon_chooser"
-        data-role="button" id="icon_display">Choose a icon</a>
-        </div> -->
+      <div data-role="fieldcontain">
+        <label for="iconbox_icourl">Icon：</label> <a href="#icon_selector"
+        data-role="button" id="icon_display" data-inline="true" data-notext="true"><img src="" alt="Pic" id="icon_shower" height="96" width="96"></a>
+        </div>
         <div data-role="fieldcontain">
         <input type="text" name="iconbox_icourl" id="iconbox_icourl"
         value="" placeholder="...">
@@ -302,17 +303,29 @@
       </div>
     </div>
   </div>
-  <div id="icon_chooser" data-role="page">
+  <div id="icon_selector" data-role="page">
       <div data-role="header">
       <a href="#" data-role="button" data-rel="back" data-iconpos=
       "notext" data-icon="back"></a>
-      <h1><!-- . --></h1>
+      <h1>Icon selector</h1>
     </div>
   <div data-role="content">
         <ul data-filter="true" data-role="listview" id="icon_list">
         <!-- Hello -->
       </ul>
   </div>
+  </div>
+  <div id="icon_viewer" data-role="dialog">
+  <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+	  <a data-role="button" data-iconpos="notext" data-icon=
+        "check" onclick="" id="save_icon_bt"class="ui-btn-right" href="#iconbox_editor">Save</a> 
+      <h1>Icon selector</h1>
+    </div>
+    <div data-role="content">
+    <img src="" alt="Pic" id="icon_box_v" height="96" width="96">
+    </div>
   </div>
   <div id="confirm_page" data-role="page">
     <!-- data-role="dialog" -->
@@ -325,10 +338,19 @@
     </div>
     <div data-role="content">
       <h3>Are you SURE to continue?</h3>
-      <p id="info_TBS">...</p>
+      <p id="info_TBS_C">...</p>
       <p>This operation may be dangerous.</p>
       <p>Please click on buttons on the top of page.</p>
     </div>
+  </div>
+  <div id="info_dialog" data-role="dialog">
+    <div data-role="header">
+      <a href="#" data-role="button" data-rel="back" data-iconpos=
+      "notext" data-icon="back"></a>
+      <h1>Info</h1>
+    </div>
+    <div data-role="content">
+	<h3 id="info_TBS_I"> <!-- --></h3>
   </div>
   <div data-role="page" id="debug_settings">
     <div data-role="header">
