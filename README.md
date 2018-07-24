@@ -36,7 +36,7 @@ A prue, fast homepage for web browser
 3. 访问 localhost:8088/index.html
    
 ## 文档
-暂无
+* https://github.com/ImBearChild/Argo-Navis/wiki
 
 ## 截图
 使用图片背景
