@@ -4,17 +4,16 @@ var configData = {};
 var configDef = {
 	syncDelay: 3,
 	syncServer: "data.copas.cpace:8088/start",
-	backgroundEngine: "tan",
+	backgroundEngine: "pic",
 	// tan = trianglify ,pic = picture in the background folder , custom
-	backgroundConfig: {
-		"cell_size": 94,
+	trianglifyConfig: {
+	"cell_size": 94,
 		"width": 1200,
 		"height": 1200,
-		//"variance": "0.00001",
-		//"x_colors": "Greys",remove this line to make wallpaper colorful
-		"seed": 8507265
+		"variance": "0.00001",
+	"x_colors": "Greys",
+	"seed": 8507265
 	},
-	// for custom
 	searchEngine: "bing",
 	searchURL: "https://bing.com/search?q={searchTerms}"
 }
@@ -121,9 +120,9 @@ function saveNaviData(){
 function updateBackground() {
 	if (configData.backgroundEngine == 'tan') {
 		let seed = getSeed();
-		let co = configData.backgroundConfig
-			co.seed = seed
-			let t = Trianglify(co).png();
+		let co = configData.trianglifyConfig;
+		co.seed = seed;
+		let t = Trianglify(co).png();
 		$("#wrapper").css("background-image", "url(" + t + ")");
 	} else if (configData.backgroundEngine == 'pic') {
 		let n = 13;

@@ -58,7 +58,7 @@ function saveHtmlBox() {
 function saveAppearanceSettings() {
 	parent.configData.backgroundEngine = $("#background_engine").val();
 	if ($("#background_engine").val() == "tan") {
-		parent.configData.backgroundConfig = JSON.parse($("#background_config").val());
+		parent.configData.trianglifyConfig = JSON.parse($("#background_config").val());
 	}
 	console.log(parent.configData);
 	parent.saveConfigData();
@@ -201,7 +201,7 @@ function background_engine_onchange() {
 		$("#background_description").html("Trianglify : Use javascript to generate wallpaper.</br>Don't modifie"
 			 + '"seed" section.' + '</br>Remove the "x_color" line to make wallpaper colorful' +
 			'</br>See: <a href="https://github.com/qrohlf/trianglify">Trianglify - Github</a> for more infomation.');
-		$("#background_config").val(JSON.stringify(parent.configData.backgroundConfig, null, 2));
+		$("#background_config").val(JSON.stringify(parent.configData.trianglifyConfig, null, 2));
 	} else if ($("#background_engine").val() == "pic") {
 		$("#background_description").text("Preset picture : Show preset wallpapers");
 		$("#background_parent.configData").val("N/A");
